@@ -1,0 +1,2815 @@
+
+*******************************
+*       Angle estimator       *
+*******************************
+
+--------------------------
+|    Hyper-parameters    |
+--------------------------
+
+Batch size:        32
+Camera number:     2
+Huber Quad. size:  20.0
+Learning rate:     2e-05
+Load model path:   /esat/ruchba/cpicron/ObjectDetector3D/NuScenes/Models/AngleEstimator/All/1.pt
+Milestones:        [20]
+Min bb. size:      0.0
+Optimizer:         SGD
+Optim. momentum:   0.9
+Prune threshold:   1.0
+Remove threshold:  1.0
+Representation:    Single
+Resume:            False
+Scheduler:         MultiStepLR
+Split:             All
+Split percentage:  0.8
+Step LR gamma:     0.1
+Training epochs:   30
+Weight decay:      0.0001
+Workers:           8
+
+--------------------------
+|     Initialization     |
+--------------------------
+
+Loading angle model ...
+Model loaded.
+
+Output angles (top 3):  [-74.13616416 -75.77439186 -79.22360324]
+Target angles (top 3):  [-74.46463173 -76.07578905 -79.49554495]
+Mean inconsistency: 0.04°
+Mean error: 0.31°
+
+Output angles (top 3):  [45.81894435 46.18386087 51.1293652 ]
+Target angles (top 3):  [38.90245919 39.45633749 43.57733643]
+Mean inconsistency: 0.55°
+Mean error: 6.82°
+
+Output angles (top 3):  [-107.5648858  -108.162582   -107.74794853]
+Target angles (top 3):  [-107.94868635 -108.56753806 -107.76344909]
+Mean inconsistency: 0.26°
+Mean error: 0.39°
+
+Output angles (top 3):  [-103.88816765 -103.67615858 -104.12912307]
+Target angles (top 3):  [-102.44382245 -102.2896395  -102.57709243]
+Mean inconsistency: 0.11°
+Mean error: 1.42°
+
+Output angles (top 3):  [105.33895447 109.68673871 104.73593073]
+Target angles (top 3):  [102.42101873 106.79583797 101.90845068]
+Mean inconsistency: 0.06°
+Mean error: 2.90°
+
+Output angles (top 3):  [-101.15654278 -101.29496339  -99.72120584]
+Target angles (top 3):  [-102.85383104 -103.19508471 -100.71234399]
+Mean inconsistency: 0.61°
+Mean error: 1.80°
+
+Output angles (top 3):  [-91.97496536 -91.6880018  -92.29788305]
+Target angles (top 3):  [-98.58025344 -98.33136058 -98.51642594]
+Mean inconsistency: 0.28°
+Mean error: 6.62°
+
+Output angles (top 3):  [102.9172426  106.73409574 108.49948108]
+Target angles (top 3):  [92.51085422 95.69036891 95.12612008]
+Mean inconsistency: 1.98°
+
+Output angles (top 3):  [-120.14469407 -119.2633811  -114.6354908 ]
+Target angles (top 3):  [-113.64818402 -117.53684857 -130.43160753]
+Mean inconsistency: 14.86°
+
+Output angles (top 3):  [-101.11744677 -109.49505628 -103.73767127]
+Target angles (top 3):  [-102.47860098 -110.77474338 -104.88370592]
+Mean inconsistency: 0.14°
+Mean error: 1.32°
+
+Output angles (top 3):  [-88.16067354 -91.55608352 -88.5310064 ]
+Target angles (top 3):  [-95.0158257  -98.43363354 -95.27869874]
+Mean inconsistency: 0.09°
+Mean error: 6.87°
+
+Output angles (top 3):  [111.83134981 121.92141752 113.77121233]
+Target angles (top 3):  [115.8979028  125.98482478 117.87053919]
+Mean inconsistency: 0.02°
+Mean error: 4.06°
+
+Output angles (top 3):  [104.70038643 106.89114228 104.25671783]
+Target angles (top 3):  [102.09844349 104.28851736 101.69049754]
+Mean inconsistency: 0.02°
+Mean error: 2.60°
+
+Output angles (top 3):  [ -98.31443959 -103.4579477  -107.94568251]
+Target angles (top 3):  [ -94.20348614  -99.30361266 -103.88200381]
+Mean inconsistency: 0.06°
+Mean error: 4.13°
+
+Output angles (top 3):  [93.35421961 95.51540758 99.09724757]
+Target angles (top 3):  [100.21100592 102.39053737 105.81436127]
+Mean inconsistency: 0.11°
+Mean error: 6.87°
+
+Output angles (top 3):  [-61.5365142  -60.16832485 -63.82487345]
+Target angles (top 3):  [-58.88504985 -57.30655112 -60.39015268]
+Mean inconsistency: 0.52°
+Mean error: 2.76°
+
+Output angles (top 3):  [-63.9579392  -62.29398217 -60.48842167]
+Target angles (top 3):  [-63.87127235 -63.18515539 -62.46672361]
+Mean inconsistency: 1.38°
+
+Output angles (top 3):  [-85.62450136 -83.79282904 -80.17300636]
+Target angles (top 3):  [-59.6241654  -58.21434545 -55.04571696]
+Mean inconsistency: 0.58°
+Mean error: 25.79°
+
+Output angles (top 3):  [-69.44456186 -67.22279011 -71.74664297]
+Target angles (top 3):  [-54.00872064 -51.39878329 -58.45905572]
+Mean inconsistency: 1.69°
+
+Output angles (top 3):  [ 98.07914641 121.06496643 101.67194202]
+Target angles (top 3):  [100.98346762 123.98302484 104.60479007]
+Mean inconsistency: 0.02°
+Mean error: 2.91°
+
+Output angles (top 3):  [104.29237142 104.90828373 109.7604023 ]
+Target angles (top 3):  [100.6171757  101.23923598 106.12186772]
+Mean inconsistency: 0.02°
+Mean error: 3.67°
+
+Output angles (top 3):  [-84.73822284 -85.16182435 -85.38332738]
+Target angles (top 3):  [-92.08692275 -92.50942183 -92.71322291]
+Mean inconsistency: 0.01°
+Mean error: 7.35°
+
+Output angles (top 3):  [105.89908463 108.82118982 100.89159974]
+Target angles (top 3):  [106.68600196 109.6748363  101.94162494]
+Mean inconsistency: 0.18°
+Mean error: 0.82°
+
+Output angles (top 3):  [155.74547051 152.16822724 163.90394023]
+Target angles (top 3):  [154.69969331 151.13446342 162.94994178]
+Mean inconsistency: 0.06°
+Mean error: 1.04°
+
+Output angles (top 3):  [100.8882871  109.75887917 103.11271579]
+Target angles (top 3):  [ 97.95807857 106.82299617 100.15760625]
+Mean inconsistency: 0.02°
+Mean error: 2.93°
+
+Output angles (top 3):  [163.26682018 162.69218271 160.79781608]
+Target angles (top 3):  [170.61485657 170.09541303 168.30131029]
+Mean inconsistency: 0.10°
+Mean error: 7.38°
+
+Output angles (top 3):  [ 99.07418202 138.24212722 102.18876195]
+Target angles (top 3):  [101.60776243 140.61541667 104.37600802]
+Mean inconsistency: 0.23°
+Mean error: 2.45°
+
+Output angles (top 3):  [104.23546911 111.05075481 108.63752603]
+Target angles (top 3):  [102.29359291 109.11053017 106.68657492]
+Mean inconsistency: 0.01°
+Mean error: 1.94°
+
+Output angles (top 3):  [-63.39427784 -61.55571386 -76.6085492 ]
+Target angles (top 3):  [-65.17326165 -63.31240932 -78.31112659]
+Mean inconsistency: 0.05°
+Mean error: 1.77°
+
+Output angles (top 3):  [113.87240158 119.12942743 122.98668114]
+Target angles (top 3):  [110.15388631 115.45013628 119.82896623]
+Mean inconsistency: 0.37°
+Mean error: 3.70°
+
+Output angles (top 3):  [159.40948451 150.85013733 164.32194781]
+Target angles (top 3):  [161.10301233 152.50618168 165.87689668]
+Mean inconsistency: 0.09°
+Mean error: 1.67°
+
+Output angles (top 3):  [-91.2094924  -93.31100501 -99.53821142]
+Target angles (top 3):  [-38.90142787 -40.06917315 -41.29679252]
+Mean inconsistency: 3.96°
+
+Output angles (top 3):  [-31.95240358 -28.79899745   0.40266185]
+Target angles (top 3):  [-31.78838602 -31.61134206 -31.48414543]
+Mean inconsistency: 21.37°
+
+Output angles (top 3):  [140.1631589  140.29894306 130.7120349 ]
+Target angles (top 3):  [-27.34859336 -28.05522221 -33.15672383]
+Mean inconsistency: 2.99°
+
+Output angles (top 3):  [112.22240546 115.41287561 113.9339689 ]
+Target angles (top 3):  [111.88416156 115.06717129 113.3741956 ]
+Mean inconsistency: 0.15°
+Mean error: 0.34°
+
+Output angles (top 3):  [108.38672149 112.59723258 109.24733898]
+Target angles (top 3):  [105.27142646 109.48908338 106.25565336]
+Mean inconsistency: 0.08°
+Mean error: 3.11°
+
+Output angles (top 3):  [143.24797286 142.50503952 130.58310825]
+Target angles (top 3):  [-29.16189019 -29.82778174 -38.83633986]
+Mean inconsistency: 1.99°
+
+Output angles (top 3):  [-36.98361996 -38.63734878 -36.88974584]
+Target angles (top 3):  [-33.76749684 -35.62101531 -34.67259827]
+Mean inconsistency: 0.67°
+Mean error: 3.12°
+
+Output angles (top 3):  [-15.97675162 -17.62166949 -25.68984753]
+Target angles (top 3):  [-34.93753395 -35.81289887 -42.04037715]
+Mean inconsistency: 1.74°
+
+Output angles (top 3):  [103.12607564 125.60876344 102.02394948]
+Target angles (top 3):  [101.12567574 123.58630886 100.0701156 ]
+Mean inconsistency: 0.05°
+Mean error: 2.01°
+
+Output angles (top 3):  [158.37465621 154.25394844 149.43863776]
+Target angles (top 3):  [150.81400813 146.80301709 141.75319626]
+Mean inconsistency: 0.16°
+Mean error: 7.51°
+
+Output angles (top 3):  [167.6059574  162.74966558 161.8643911 ]
+Target angles (top 3):  [162.46109419 157.54614763 156.48216501]
+Mean inconsistency: 0.16°
+Mean error: 5.17°
+
+Output angles (top 3):  [-101.89039196 -108.75944491 -110.94864348]
+Target angles (top 3):  [-102.86614964 -109.75774329 -112.01725965]
+Mean inconsistency: 0.06°
+Mean error: 0.99°
+
+Output angles (top 3):  [103.58401933 117.49966233 105.86808923]
+Target angles (top 3):  [103.16380121 117.06828369 105.46285166]
+Mean inconsistency: 0.02°
+Mean error: 0.43°
+
+Output angles (top 3):  [154.97264827 150.42182983 161.32453295]
+Target angles (top 3):  [154.39442139 149.86381492 160.90419597]
+Mean inconsistency: 0.11°
+Mean error: 0.57°
+
+Output angles (top 3):  [161.2859014  146.09550604 153.42375261]
+Target angles (top 3):  [160.71798469 145.53557715 152.68494451]
+Mean inconsistency: 0.12°
+Mean error: 0.56°
+
+Output angles (top 3):  [-102.81872395 -107.66706543 -110.05566455]
+Target angles (top 3):  [-104.12551087 -108.93457483 -111.2210202 ]
+Mean inconsistency: 0.09°
+Mean error: 1.29°
+
+Output angles (top 3):  [109.15468064 117.21014427 119.28638517]
+Target angles (top 3):  [108.03434354 116.07912935 118.44103327]
+Mean inconsistency: 0.19°
+Mean error: 1.13°
+
+Output angles (top 3):  [83.24678957 81.90469838 80.36459317]
+Target angles (top 3):  [75.85330954 74.52863112 72.40582249]
+Mean inconsistency: 0.39°
+Mean error: 7.38°
+
+Output angles (top 3):  [-107.97953293 -108.8277468  -111.29930539]
+Target angles (top 3):  [-106.32263213 -107.21300854 -109.54425922]
+Mean inconsistency: 0.09°
+Mean error: 1.64°
+
+Output angles (top 3):  [ 97.48282991 106.06278377 111.55282835]
+Target angles (top 3):  [ 97.65441094 106.24872057 111.75725141]
+Mean inconsistency: 0.02°
+Mean error: 0.18°
+
+Output angles (top 3):  [-93.77896859 -99.57406991 -97.77033989]
+Target angles (top 3):  [ -98.18863679 -103.97631266 -102.20134671]
+Mean inconsistency: 0.02°
+Mean error: 4.41°
+
+Output angles (top 3):  [-141.19593815 -150.68760615 -145.28574614]
+Target angles (top 3):  [-141.0345353  -156.84135225 -128.69004501]
+Mean inconsistency: 15.17°
+
+Output angles (top 3):  [111.65172949 116.59970294 112.8627152 ]
+Target angles (top 3):  [110.52980392 115.50410891 111.64117016]
+Mean inconsistency: 0.08°
+Mean error: 1.11°
+
+Output angles (top 3):  [-96.21688167 -97.20721129 -95.2567893 ]
+Target angles (top 3):  [-103.29827441 -104.25964029 -102.43350921]
+Mean inconsistency: 0.08°
+Mean error: 7.07°
+
+Output angles (top 3):  [101.84453407 106.30968145 114.91033762]
+Target angles (top 3):  [101.33915982 105.79780279 114.41841118]
+Mean inconsistency: 0.01°
+Mean error: 0.51°
+
+Output angles (top 3):  [-103.7236967  -109.83114257 -107.8245696 ]
+Target angles (top 3):  [-103.15904566 -109.28098511 -107.21283665]
+Mean inconsistency: 0.04°
+Mean error: 0.56°
+
+Output angles (top 3):  [-136.28052421 -134.19540406 -132.23126022]
+Target angles (top 3):  [-142.06614581 -139.66648397 -138.89425146]
+Mean inconsistency: 0.79°
+Mean error: 5.63°
+
+Output angles (top 3):  [-92.22713595 -94.80606511 -76.51434723]
+Target angles (top 3):  [40.01806531 40.6888843  42.40472101]
+Mean inconsistency: 11.05°
+
+Output angles (top 3):  [140.56501991 139.62013154 146.38679995]
+Target angles (top 3):  [144.68943307 143.76828883 150.64905358]
+Mean inconsistency: 0.09°
+Mean error: 4.14°
+
+Output angles (top 3):  [149.34585647 148.69556782 150.06264384]
+Target angles (top 3):  [144.82900559 144.20631506 145.60307157]
+Mean inconsistency: 0.04°
+Mean error: 4.50°
+
+Output angles (top 3):  [83.44336241 85.9778612  87.06964644]
+Target angles (top 3):  [73.96031428 76.55535473 77.71278677]
+Mean inconsistency: 0.08°
+Mean error: 9.45°
+
+Output angles (top 3):  [  9.40681315  12.47044327 -30.30858195]
+Target angles (top 3):  [-42.52194817 -44.70812594 -45.8611462 ]
+Mean inconsistency: 27.75°
+
+Output angles (top 3):  [94.35073738 96.88854881 90.23209233]
+Target angles (top 3):  [88.10492337 90.65206454 84.12618985]
+Mean inconsistency: 0.09°
+Mean error: 6.24°
+
+Output angles (top 3):  [-109.73233705 -111.09439972 -110.56343447]
+Target angles (top 3):  [-109.11196256 -110.46729423 -109.98875987]
+Mean inconsistency: 0.03°
+Mean error: 0.62°
+
+Output angles (top 3):  [161.18008811 159.62212196 157.50189464]
+Target angles (top 3):  [-172.18000538 -173.79316805 -175.52802696]
+Mean inconsistency: 0.26°
+Mean error: 333.39°
+
+Output angles (top 3):  [ -99.57570915 -103.43161049  -92.83074709]
+Target angles (top 3):  [ -96.89455431 -100.76144647  -90.20429803]
+Mean inconsistency: 0.04°
+Mean error: 2.68°
+
+Output angles (top 3):  [-102.10976398 -104.62459865  -98.05042546]
+Target angles (top 3):  [-101.73908436 -104.25534311  -97.64587387]
+Mean inconsistency: 0.02°
+Mean error: 0.37°
+
+Output angles (top 3):  [104.06267899 114.5317334  101.29085162]
+Target angles (top 3):  [103.42478349 113.87828387 100.67063266]
+Mean inconsistency: 0.02°
+Mean error: 0.65°
+
+Output angles (top 3):  [113.72208278 117.14602245 115.72580756]
+Target angles (top 3):  [102.45402109 105.90809716 107.69085534]
+Mean inconsistency: 2.16°
+
+Output angles (top 3):  [ -94.70869394 -120.01533028  -93.52237887]
+Target angles (top 3):  [ -96.63901514 -121.96323402  -95.64481877]
+Mean inconsistency: 0.13°
+Mean error: 1.94°
+
+Output angles (top 3):  [-166.20336439 -167.03178438 -164.83727192]
+Target angles (top 3):  [-166.89229248 -167.59301986 -165.68088782]
+Mean inconsistency: 0.19°
+Mean error: 0.63°
+
+Output angles (top 3):  [162.51014451 161.61743878 163.37856208]
+Target angles (top 3):  [-169.98133714 -171.0217712  -170.59079234]
+Mean inconsistency: 0.99°
+Mean error: 332.57°
+
+Output angles (top 3):  [26.73259714 30.77582495 26.96438131]
+Target angles (top 3):  [21.7318881  25.81123301 22.19013974]
+Mean inconsistency: 0.15°
+Mean error: 4.98°
+
+Output angles (top 3):  [108.31961488 113.48777997 107.24504171]
+Target angles (top 3):  [101.69594064 106.87651043 100.6483446 ]
+Mean inconsistency: 0.02°
+Mean error: 6.62°
+
+Output angles (top 3):  [100.53674409 102.95722653 109.18342207]
+Target angles (top 3):  [100.27494801 102.68864731 109.05884937]
+Mean inconsistency: 0.10°
+Mean error: 0.27°
+
+Output angles (top 3):  [110.07873693 118.67322543 104.57731325]
+Target angles (top 3):  [105.52129335 114.10970152 100.15800732]
+Mean inconsistency: 0.10°
+Mean error: 4.56°
+
+Output angles (top 3):  [ 98.50739927 102.22303584 103.05327948]
+Target angles (top 3):  [ 98.6908343  102.3724319  103.30406128]
+Mean inconsistency: 0.07°
+Mean error: 0.17°
+
+Output angles (top 3):  [94.61889744 95.39512795 94.40910818]
+Target angles (top 3):  [97.05211771 97.85196679 96.79612016]
+Mean inconsistency: 0.05°
+Mean error: 2.45°
+
+Output angles (top 3):  [-107.36928285 -112.28871294 -105.53678407]
+Target angles (top 3):  [-101.79047867 -106.74948568 -100.07475655]
+Mean inconsistency: 0.08°
+Mean error: 5.56°
+
+Output angles (top 3):  [ -96.78818601 -110.62968731  -97.42374877]
+Target angles (top 3):  [ -98.68481824 -112.52833801  -99.32928117]
+Mean inconsistency: 0.01°
+Mean error: 1.90°
+
+Output angles (top 3):  [-97.87877598 -98.23130936 -97.71423672]
+Target angles (top 3):  [-96.22396451 -96.60475226 -95.95106471]
+Mean inconsistency: 0.09°
+Mean error: 1.64°
+
+Output angles (top 3):  [-100.27630898 -100.53193564  -98.74210506]
+Target angles (top 3):  [-97.56709217 -97.80401022 -95.99031232]
+Mean inconsistency: 0.03°
+Mean error: 2.72°
+
+Output angles (top 3):  [103.09915786 103.03183269 104.77561413]
+Target angles (top 3):  [101.32798714 101.39284596 101.47013797]
+Mean inconsistency: 1.11°
+
+Output angles (top 3):  [104.02911544 104.77854428 105.97998822]
+Target angles (top 3):  [ 99.65426283 100.02679999  99.30395643]
+Mean inconsistency: 1.53°
+
+Output angles (top 3):  [ -99.35849548 -100.35585336  -98.17183207]
+Target angles (top 3):  [-95.53526924 -96.51101636 -95.06040182]
+Mean inconsistency: 0.49°
+Mean error: 3.83°
+
+Output angles (top 3):  [123.30543241 120.66766799 148.47066335]
+Target angles (top 3):  [129.29170799 130.29724892 131.43554417]
+Mean inconsistency: 17.78°
+
+Output angles (top 3):  [124.44932517 126.51663218 122.46993635]
+Target angles (top 3):  [126.29301878 127.67315952 125.01417698]
+Mean inconsistency: 0.93°
+Mean error: 1.50°
+
+Output angles (top 3):  [112.68034915 115.566268   113.48273246]
+Target angles (top 3):  [124.8944861  127.39126428 126.09574941]
+Mean inconsistency: 0.53°
+Mean error: 12.02°
+
+Output angles (top 3):  [-83.16876149 -88.60012791 -88.90832654]
+Target angles (top 3):  [-86.19078597 -91.62231127 -91.92981772]
+Mean inconsistency: 0.00°
+Mean error: 3.02°
+
+Output angles (top 3):  [105.88498712 108.84640688 110.81542064]
+Target angles (top 3):  [104.11932293 107.11652245 109.1264011 ]
+Mean inconsistency: 0.05°
+Mean error: 1.75°
+
+Output angles (top 3):  [156.74909851 132.18276588 143.77266799]
+Target angles (top 3):  [162.96690133 138.39188206 150.00292908]
+Mean inconsistency: 0.01°
+Mean error: 6.21°
+
+Output angles (top 3):  [131.64941006 124.75755795 136.8990115 ]
+Target angles (top 3):  [134.69149144 127.80402308 139.8860414 ]
+Mean inconsistency: 0.04°
+Mean error: 3.04°
+
+Output angles (top 3):  [-84.34479029 -85.15382619 -53.83051719]
+Target angles (top 3):  [-80.16263971 -81.03628575 -49.79633493]
+Mean inconsistency: 0.10°
+Mean error: 4.15°
+
+Output angles (top 3):  [98.06426342 97.74041683 97.79430703]
+Target angles (top 3):  [103.82717175 103.49325194 103.49909611]
+Mean inconsistency: 0.04°
+Mean error: 5.76°
+
+Output angles (top 3):  [-76.88026096 -75.67534046 -75.88030077]
+Target angles (top 3):  [108.87733634 109.99076523 109.68669653]
+Mean inconsistency: 0.13°
+Mean error: 185.71°
+
+Output angles (top 3):  [155.54764091 139.412767   143.00550114]
+Target angles (top 3):  [154.9387313  138.80040097 142.38780432]
+Mean inconsistency: 0.01°
+Mean error: 0.61°
+
+Output angles (top 3):  [   5.51876041  -61.1013082  -133.11191749]
+Target angles (top 3):  [   1.32158445  -65.31684487 -137.38462226]
+Mean inconsistency: 0.05°
+Mean error: 4.21°
+
+Output angles (top 3):  [-86.71973585 -86.79743609 -86.14725672]
+Target angles (top 3):  [104.75822816 104.72940839 104.73233047]
+Mean inconsistency: 0.43°
+Mean error: 191.50°
+
+Output angles (top 3):  [-80.22070158 -80.64379081 -79.17989003]
+Target angles (top 3):  [109.37368968 109.3734032  109.37684095]
+Mean inconsistency: 0.97°
+Mean error: 189.81°
+
+Output angles (top 3):  [ 25.1997917  109.468159   -92.03852027]
+Target angles (top 3):  [153.33359003 154.0792946  152.59751115]
+Mean inconsistency: 133.35°
+
+Output angles (top 3):  [-100.41632786 -100.09761757 -101.70663255]
+Target angles (top 3):  [ -99.0153003   -98.70951272 -100.29242322]
+Mean inconsistency: 0.02°
+Mean error: 1.39°
+
+Output angles (top 3):  [103.75759493 114.59666801 113.77746195]
+Target angles (top 3):  [110.4417976  121.2018877  120.10513189]
+Mean inconsistency: 0.24°
+Mean error: 6.64°
+
+Output angles (top 3):  [-85.96909123 -76.46937727 -76.41416202]
+Target angles (top 3):  [112.47121411 121.62261061 120.7049614 ]
+Mean inconsistency: 0.88°
+Mean error: 198.27°
+
+Output angles (top 3):  [-89.38231435 -87.60580263 -88.67195418]
+Target angles (top 3):  [-92.35982255 -90.58359609 -91.59578333]
+Mean inconsistency: 0.04°
+Mean error: 2.98°
+
+Output angles (top 3):  [108.51988285 110.62927067 112.20688727]
+Target angles (top 3):  [111.57510812 113.61386384 115.43581234]
+Mean inconsistency: 0.16°
+Mean error: 3.02°
+
+Output angles (top 3):  [113.40201328 115.40988399 109.86525254]
+Target angles (top 3):  [117.95619638 120.17365764 115.5204955 ]
+Mean inconsistency: 0.73°
+Mean error: 4.66°
+
+Output angles (top 3):  [-70.12159753 -66.14387294 -59.3309983 ]
+Target angles (top 3):  [109.3653245  109.75201371 111.89470398]
+Mean inconsistency: 5.51°
+
+Output angles (top 3):  [110.7656832  111.06478402 109.73813588]
+Target angles (top 3):  [108.82978085 109.27749007 107.59287956]
+Mean inconsistency: 0.24°
+Mean error: 1.86°
+
+Output angles (top 3):  [156.18303975 160.09747581 156.70227073]
+Target angles (top 3):  [169.19013972 171.54046989 165.39824773]
+Mean inconsistency: 2.87°
+
+Output angles (top 3):  [164.59302435 165.32732433 163.82238777]
+Target angles (top 3):  [171.96846936 172.87523237 169.94415218]
+Mean inconsistency: 0.95°
+Mean error: 7.46°
+
+Output angles (top 3):  [-88.36281982 -88.23535483 -88.51734602]
+Target angles (top 3):  [-89.78982036 -89.6629675  -89.95019124]
+Mean inconsistency: 0.00°
+Mean error: 1.43°
+
+Output angles (top 3):  [-85.88515504 -87.13115913 -87.21730147]
+Target angles (top 3):  [-85.67214457 -86.95064259 -86.39034717]
+Mean inconsistency: 0.43°
+Mean error: 0.20°
+
+Output angles (top 3):  [125.15851737 129.55095738 124.52483974]
+Target angles (top 3):  [127.27907915 131.67991067 126.79739353]
+Mean inconsistency: 0.10°
+Mean error: 2.12°
+
+Output angles (top 3):  [122.69145304 125.28350983 118.78066431]
+Target angles (top 3):  [123.90762359 126.41649119 119.7411891 ]
+Mean inconsistency: 0.17°
+Mean error: 1.17°
+
+Output angles (top 3):  [109.99256726 109.94782269 112.56284941]
+Target angles (top 3):  [107.5325471  107.49433082 110.22957404]
+Mean inconsistency: 0.08°
+Mean error: 2.46°
+
+Output angles (top 3):  [113.00657948 114.76102968 109.83823231]
+Target angles (top 3):  [113.24316015 115.03709101 110.23805381]
+Mean inconsistency: 0.11°
+Mean error: 0.26°
+
+Output angles (top 3):  [103.73691311 122.17817799 101.82932324]
+Target angles (top 3):  [102.76719982 121.20990911 100.93310463]
+Mean inconsistency: 0.05°
+Mean error: 0.97°
+
+Output angles (top 3):  [98.16321237 97.51823761 97.433755  ]
+Target angles (top 3):  [99.65999241 99.03621325 98.98659511]
+Mean inconsistency: 0.04°
+Mean error: 1.51°
+
+Output angles (top 3):  [103.04670884 108.49048572 122.20228855]
+Target angles (top 3):  [101.34145165 106.78094107 120.5299228 ]
+Mean inconsistency: 0.02°
+Mean error: 1.71°
+
+Output angles (top 3):  [101.04835258 103.9650346   97.47190161]
+Target angles (top 3):  [103.23851491 106.30956869  99.42983526]
+Mean inconsistency: 0.26°
+Mean error: 2.27°
+
+Output angles (top 3):  [101.29391837 107.81475461 132.43671231]
+Target angles (top 3):  [ 98.17093239 104.67451903 129.34814434]
+Mean inconsistency: 0.03°
+Mean error: 3.13°
+
+Output angles (top 3):  [100.16781825 123.31394282 104.63922891]
+Target angles (top 3):  [100.62617114 123.73390279 105.20278612]
+Mean inconsistency: 0.10°
+Mean error: 0.44°
+
+Output angles (top 3):  [100.01428243 103.14098594 104.84079463]
+Target angles (top 3):  [100.27007787 103.41189194 105.18468065]
+Mean inconsistency: 0.06°
+Mean error: 0.26°
+
+Output angles (top 3):  [-85.18082593 -84.50968471 -88.30483151]
+Target angles (top 3):  [-83.77748773 -83.08306289 -86.8392023 ]
+Mean inconsistency: 0.04°
+Mean error: 1.41°
+
+Output angles (top 3):  [105.93537342 110.50561009 104.56357774]
+Target angles (top 3):  [101.9244935  106.48581051 100.40031117]
+Mean inconsistency: 0.10°
+Mean error: 4.02°
+
+Output angles (top 3):  [108.96747198 121.02286515 116.90202078]
+Target angles (top 3):  [104.86743392 116.85829466 113.62463545]
+Mean inconsistency: 0.59°
+Mean error: 4.13°
+
+Output angles (top 3):  [79.14412033 95.74227914 31.97350203]
+Target angles (top 3):  [126.03358349 132.28122988 121.25586032]
+Mean inconsistency: 35.16°
+
+Output angles (top 3):  [105.08546566 105.65081408 106.41999584]
+Target angles (top 3):  [106.09344901 106.61839294 107.27884139]
+Mean inconsistency: 0.10°
+Mean error: 0.99°
+
+Output angles (top 3):  [118.23046525 120.551787   114.5466437 ]
+Target angles (top 3):  [115.9263788  118.57888691 111.69038723]
+Mean inconsistency: 0.59°
+Mean error: 2.14°
+
+Output angles (top 3):  [113.26762931 115.43932211 102.99755197]
+Target angles (top 3):  [114.20034344 116.39236538 103.73916543]
+Mean inconsistency: 0.14°
+Mean error: 0.94°
+
+Output angles (top 3):  [103.44763411 106.00127792  96.89996206]
+Target angles (top 3):  [ 99.44593537 100.55460871  97.84996144]
+Mean inconsistency: 4.26°
+
+Output angles (top 3):  [ 99.10367478 101.40405517 107.31279035]
+Target angles (top 3):  [100.12036399 101.88306865 102.5965157 ]
+Mean inconsistency: 3.82°
+
+Output angles (top 3):  [-22.90762802]
+Target angles (top 3):  [95.04556221]
+
+Output angles (top 3):  [-59.52147862 -58.76087558 -57.50504968]
+Target angles (top 3):  [-59.45113215 -58.50523612 -56.96077109]
+Mean inconsistency: 0.32°
+Mean error: 0.16°
+
+Output angles (top 3):  [-64.04011321 -63.25827511 -59.13609202]
+Target angles (top 3):  [-66.18441756 -65.3598167  -61.16834395]
+Mean inconsistency: 0.07°
+Mean error: 2.12°
+
+Output angles (top 3):  [-88.66976852 -86.16896306 -87.24378212]
+Target angles (top 3):  [-90.52767541 -88.02912105 -89.10651089]
+Mean inconsistency: 0.00°
+Mean error: 1.86°
+
+Output angles (top 3):  [103.70916889 105.47734777 103.16588881]
+Target angles (top 3):  [108.93915849 110.79502608 108.66665976]
+Mean inconsistency: 0.18°
+Mean error: 5.27°
+
+Output angles (top 3):  [-88.30690789 -77.7770648  -92.07195405]
+Target angles (top 3):  [-60.51299483 -50.1293953  -64.80863131]
+Mean inconsistency: 0.35°
+Mean error: 27.72°
+
+Output angles (top 3):  [-79.74047097 -62.04310933 -81.12570847]
+Target angles (top 3):  [-65.82184987 -48.1323509  -67.25785399]
+Mean inconsistency: 0.03°
+Mean error: 13.91°
+
+Output angles (top 3):  [-80.09370104 -78.56751576 -81.13794134]
+Target angles (top 3):  [116.49687288 118.14934046 115.98997712]
+Mean inconsistency: 0.36°
+Mean error: 196.65°
+
+Output angles (top 3):  [111.18623844 119.90831488 125.46546607]
+Target angles (top 3):  [114.02301301 122.75700975 128.21385979]
+Mean inconsistency: 0.07°
+Mean error: 2.84°
+
+Output angles (top 3):  [-81.49324095 -81.02653412 -72.88448418]
+Target angles (top 3):  [119.00172977 120.87455691 125.22926534]
+Mean inconsistency: 2.52°
+
+Output angles (top 3):  [-61.87499105 -58.95515348 -66.6445463 ]
+Target angles (top 3):  [-64.98103431 -62.06141327 -69.82573624]
+Mean inconsistency: 0.05°
+Mean error: 3.11°
+
+Output angles (top 3):  [-67.68646434 -63.61969457 -68.46447752]
+Target angles (top 3):  [-70.05950302 -66.02135378 -70.91458523]
+Mean inconsistency: 0.05°
+Mean error: 2.39°
+
+Output angles (top 3):  [-8.2063835   0.73871569 -9.58150207]
+Target angles (top 3):  [-43.45174408 -33.564326   -42.74213585]
+Mean inconsistency: 1.39°
+
+Output angles (top 3):  [103.30277946 109.77630981 103.5036963 ]
+Target angles (top 3):  [118.3306816  124.91029973 118.77627087]
+Mean inconsistency: 0.16°
+Mean error: 15.08°
+
+Output angles (top 3):  [106.7948776  107.04800441 109.36892318]
+Target angles (top 3):  [111.44223921 111.97239706 114.80962676]
+Mean inconsistency: 0.53°
+Mean error: 4.79°
+
+Output angles (top 3):  [149.48311595 143.12754296 142.1229041 ]
+Target angles (top 3):  [149.45237393 143.09449046 142.09668446]
+Mean inconsistency: 0.00°
+Mean error: 0.03°
+
+Output angles (top 3):  [93.71122677 98.62729641 93.06383412]
+Target angles (top 3):  [ 95.28282403 100.2208035   94.54101558]
+Mean inconsistency: 0.08°
+Mean error: 1.58°
+
+Output angles (top 3):  [-80.2779249  -83.43910037 -86.37464055]
+Target angles (top 3):  [-36.31177322 -38.76437636 -44.84758386]
+Mean inconsistency: 2.10°
+
+Output angles (top 3):  [113.74175372 121.08425489 114.6947222 ]
+Target angles (top 3):  [116.29662413 124.15302142 118.88169511]
+Mean inconsistency: 1.09°
+
+Output angles (top 3):  [106.70420684 119.23450306 110.28920238]
+Target angles (top 3):  [113.87541908 126.47550584 117.71263202]
+Mean inconsistency: 0.17°
+Mean error: 7.21°
+
+Output angles (top 3):  [122.01922582 123.34638622 115.73302024]
+Target angles (top 3):  [123.35002107 124.63407678 116.97386024]
+Mean inconsistency: 0.06°
+Mean error: 1.31°
+
+Output angles (top 3):  [103.62538979 112.43567129 118.35362722]
+Target angles (top 3):  [ 94.89613482 103.88973874 110.00210979]
+Mean inconsistency: 0.25°
+Mean error: 8.64°
+
+Output angles (top 3):  [ 99.54545825 102.88617207  98.97934485]
+Target angles (top 3):  [ 99.06566329 102.48501811  98.40005821]
+Mean inconsistency: 0.12°
+Mean error: 0.44°
+
+Output angles (top 3):  [92.69027058 96.7732962  95.70097016]
+Target angles (top 3):  [92.87594293 96.96869505 95.65742384]
+Mean inconsistency: 0.16°
+Mean error: 0.19°
+
+Output angles (top 3):  [95.90473519 97.02632056 97.58667611]
+Target angles (top 3):  [93.86165952 94.98586001 95.17304532]
+Mean inconsistency: 0.25°
+Mean error: 2.04°
+
+Output angles (top 3):  [92.27087648 93.01483434 92.67861145]
+Target angles (top 3):  [106.09465222 106.94211409 107.53059905]
+Mean inconsistency: 0.69°
+Mean error: 13.88°
+
+Output angles (top 3):  [92.78958837 92.90315392 94.19739964]
+Target angles (top 3):  [92.6469317  93.032475   92.83761205]
+Mean inconsistency: 0.99°
+Mean error: 0.01°
+
+Output angles (top 3):  [146.13495722 149.37099156 150.03076052]
+Target angles (top 3):  [150.00682519 151.65253186 156.30386054]
+Mean inconsistency: 2.66°
+
+Output angles (top 3):  [-130.71383807 -112.37824306 -102.8188469 ]
+Target angles (top 3):  [-129.46101702 -111.13679541 -101.54657054]
+Mean inconsistency: 0.02°
+Mean error: 1.25°
+
+Output angles (top 3):  [-108.65935532 -107.50965689 -105.99905128]
+Target angles (top 3):  [-106.97265275 -105.89784122 -104.14201205]
+Mean inconsistency: 0.16°
+Mean error: 1.65°
+
+Output angles (top 3):  [-112.6044316  -110.99779352 -118.22418148]
+Target angles (top 3):  [-107.11572031 -105.53527352 -112.67616112]
+Mean inconsistency: 0.06°
+Mean error: 5.48°
+
+Output angles (top 3):  [-108.05783422 -104.91649361 -109.36847922]
+Target angles (top 3):  [-105.03210199 -101.7860669  -106.64658246]
+Mean inconsistency: 0.27°
+Mean error: 3.08°
+
+Output angles (top 3):  [-106.41813802 -103.77212274 -101.83591437]
+Target angles (top 3):  [-104.55689079 -101.94168223 -100.19163994]
+Mean inconsistency: 0.14°
+Mean error: 1.85°
+
+Output angles (top 3):  [-102.0615565  -100.03561311  -93.19021994]
+Target angles (top 3):  [-103.17061941 -101.12384228  -94.38522835]
+Mean inconsistency: 0.07°
+Mean error: 1.10°
+
+Output angles (top 3):  [-108.07193173  -94.08787072  -93.65739122]
+Target angles (top 3):  [-111.52354192  -97.55540383  -97.02833996]
+Mean inconsistency: 0.06°
+Mean error: 3.46°
+
+Output angles (top 3):  [-141.1985063  -140.08338229 -141.03745044]
+Target angles (top 3):  [-140.02028541 -138.85804052 -139.95061374]
+Mean inconsistency: 0.09°
+Mean error: 1.20°
+
+Output angles (top 3):  [-90.55901934 -89.72521716 -89.8742314 ]
+Target angles (top 3):  [-96.44724616 -95.61651465 -95.81590397]
+Mean inconsistency: 0.04°
+Mean error: 5.89°
+
+Output angles (top 3):  [-109.07834644 -104.8486835  -105.42315705]
+Target angles (top 3):  [-107.66215016 -103.44993633 -104.09967047]
+Mean inconsistency: 0.06°
+Mean error: 1.41°
+
+Output angles (top 3):  [ 99.98777447 101.17956052  99.24111185]
+Target angles (top 3):  [101.60976778 102.51532758 100.23478367]
+Mean inconsistency: 0.42°
+Mean error: 1.48°
+
+Output angles (top 3):  [ -95.6943722  -111.05288583  -95.61350276]
+Target angles (top 3):  [-101.30329266 -116.67397413 -101.14853676]
+Mean inconsistency: 0.06°
+Mean error: 5.62°
+
+Output angles (top 3):  [-103.20656942 -104.08672125  -99.82745627]
+Target angles (top 3):  [-102.07942129 -102.95724993  -98.76663661]
+Mean inconsistency: 0.05°
+Mean error: 1.13°
+
+Output angles (top 3):  [-104.51496045 -105.47839962 -105.34108549]
+Target angles (top 3):  [-98.99513218 -99.9776975  -99.76725011]
+Mean inconsistency: 0.05°
+Mean error: 5.51°
+
+Output angles (top 3):  [-94.27180089 -94.5339777  -95.63016159]
+Target angles (top 3):  [-92.44399005 -92.68996083 -93.76929872]
+Mean inconsistency: 0.02°
+Mean error: 1.84°
+
+Output angles (top 3):  [110.10796331 111.5337653  108.77210808]
+Target angles (top 3):  [104.48905259 105.91926984 103.24917192]
+Mean inconsistency: 0.06°
+Mean error: 5.62°
+
+Output angles (top 3):  [-86.03365701 -84.04152306 -85.63365381]
+Target angles (top 3):  [-85.23469129 -83.24635586 -84.70860145]
+Mean inconsistency: 0.09°
+Mean error: 0.80°
+
+Output angles (top 3):  [-84.26717202 -81.90758755 -81.33148841]
+Target angles (top 3):  [-82.75601858 -80.39142176 -79.83101174]
+Mean inconsistency: 0.01°
+Mean error: 1.51°
+
+Output angles (top 3):  [-104.96146358 -105.62643714 -103.6550533 ]
+Target angles (top 3):  [ -99.91020308 -100.56114043  -98.75420343]
+Mean inconsistency: 0.11°
+Mean error: 5.06°
+
+Output angles (top 3):  [-105.00926124 -116.98149686 -106.58491758]
+Target angles (top 3):  [-102.34859686 -114.29270424 -103.32669311]
+Mean inconsistency: 0.40°
+Mean error: 2.67°
+
+Output angles (top 3):  [ -98.62956403 -101.5698102   -99.03113817]
+Target angles (top 3):  [-96.63643683 -99.63724598 -97.17644955]
+Mean inconsistency: 0.09°
+Mean error: 1.96°
+
+Output angles (top 3):  [-91.18592825 -95.34738493 -86.79589246]
+Target angles (top 3):  [ -98.10389633 -102.25824142  -93.5416053 ]
+Mean inconsistency: 0.11°
+Mean error: 6.91°
+
+Output angles (top 3):  [-107.13213868 -108.4368824  -109.65835245]
+Target angles (top 3):  [-103.42295002 -104.63807891 -106.08302118]
+Mean inconsistency: 0.15°
+Mean error: 3.75°
+
+Output angles (top 3):  [-91.41461664 -94.67849084 -92.00422589]
+Target angles (top 3):  [-93.67791195 -96.9258951  -94.19156862]
+Mean inconsistency: 0.05°
+Mean error: 2.26°
+
+Output angles (top 3):  [102.67977742 128.10705539 108.52498501]
+Target angles (top 3):  [101.42791098 126.90860464 107.45004118]
+Mean inconsistency: 0.12°
+Mean error: 1.23°
+
+Output angles (top 3):  [-163.83883487 -150.35022212 -151.56850931]
+Target angles (top 3):  [-163.64121536 -150.3284264  -152.18675771]
+Mean inconsistency: 0.54°
+Mean error: 0.11°
+
+Output angles (top 3):  [96.36959104 96.093788   99.27977755]
+Target angles (top 3):  [94.36368514 94.08173261 97.25093406]
+Mean inconsistency: 0.02°
+Mean error: 2.01°
+
+Output angles (top 3):  [-93.77791674 -93.97494037 -94.72454681]
+Target angles (top 3):  [-96.81084518 -97.01796942 -97.73462503]
+Mean inconsistency: 0.02°
+Mean error: 3.04°
+
+Output angles (top 3):  [-83.90353958 -83.5402623  -84.09346665]
+Target angles (top 3):  [-82.49566655 -82.13550528 -82.68124758]
+Mean inconsistency: 0.00°
+Mean error: 1.41°
+
+Output angles (top 3):  [67.17997849 55.77137691 69.86103264]
+Target angles (top 3):  [65.34669597 53.86456446 67.86100666]
+Mean inconsistency: 0.11°
+Mean error: 1.87°
+
+Output angles (top 3):  [-82.43714577 -83.84696512 -90.32741445]
+Target angles (top 3):  [-79.19147625 -80.64415344 -87.0062195 ]
+Mean inconsistency: 0.08°
+Mean error: 3.22°
+
+Output angles (top 3):  [110.4286885  117.17771453 115.84181149]
+Target angles (top 3):  [107.28119052 114.04850963 112.58998826]
+Mean inconsistency: 0.08°
+Mean error: 3.14°
+
+Output angles (top 3):  [-59.54838273 -62.10139816 -99.1239058 ]
+Target angles (top 3):  [-59.49502071 -62.00377372 -99.14180938]
+Mean inconsistency: 0.08°
+Mean error: 0.08°
+
+Output angles (top 3):  [-90.50872865 -92.36223709 -99.18831449]
+Target angles (top 3):  [ -92.73253159  -94.51150825 -101.66511551]
+Mean inconsistency: 0.22°
+Mean error: 2.19°
+
+Output angles (top 3):  [-102.80980373 -111.0936484  -104.09961665]
+Target angles (top 3):  [-100.05487492 -108.39312971 -101.54657054]
+Mean inconsistency: 0.13°
+Mean error: 2.73°
+
+Output angles (top 3):  [97.90453945 97.58985897 98.08551897]
+Target angles (top 3):  [97.67658441 97.33928415 97.88187518]
+Mean inconsistency: 0.03°
+Mean error: 0.24°
+
+Output angles (top 3):  [-95.50797633 -96.83681013 -91.46414918]
+Target angles (top 3):  [-97.01791213 -98.50943586 -93.94147254]
+Mean inconsistency: 0.64°
+Mean error: 1.59°
+
+Output angles (top 3):  [98.02566602 97.90192349 97.83075292]
+Target angles (top 3):  [96.49846859 96.39482052 96.3584377 ]
+Mean inconsistency: 0.04°
+Mean error: 1.52°
+
+Output angles (top 3):  [90.01440737 89.06031874 86.50416142]
+Target angles (top 3):  [87.8329403  86.89048203 84.36041499]
+Mean inconsistency: 0.03°
+Mean error: 2.18°
+
+Output angles (top 3):  [-101.79923626 -101.81498667 -106.60396015]
+Target angles (top 3):  [ -99.11207287  -99.11952132 -103.94525835]
+Mean inconsistency: 0.02°
+Mean error: 2.69°
+
+Output angles (top 3):  [100.07037195 101.59228153 107.0956723 ]
+Target angles (top 3):  [ 96.86464592  98.4002301  103.91867311]
+Mean inconsistency: 0.02°
+Mean error: 3.20°
+
+Output angles (top 3):  [70.86433279 65.7100125  77.48235579]
+Target angles (top 3):  [74.89343335 69.6457129  81.23831067]
+Mean inconsistency: 0.18°
+Mean error: 3.98°
+
+Output angles (top 3):  [79.50228862 67.77141823 72.92043147]
+Target angles (top 3):  [83.27901445 71.56844467 76.67556127]
+Mean inconsistency: 0.03°
+Mean error: 3.79°
+
+Output angles (top 3):  [103.27057512 110.71373279 105.03372698]
+Target angles (top 3):  [100.92875015 108.41662098 102.86276919]
+Mean inconsistency: 0.11°
+Mean error: 2.32°
+
+Output angles (top 3):  [-92.87573754 -95.53932007 -90.78207282]
+Target angles (top 3):  [-94.61561468 -97.27436803 -92.51194284]
+Mean inconsistency: 0.01°
+Mean error: 1.74°
+
+Output angles (top 3):  [ 99.90786125 117.6677123  109.41374971]
+Target angles (top 3):  [ 97.28095705 115.04471135 106.80701065]
+Mean inconsistency: 0.01°
+Mean error: 2.62°
+
+Output angles (top 3):  [91.6215987  93.21256832 92.14921715]
+Target angles (top 3):  [90.29579939 91.8717771  90.79123599]
+Mean inconsistency: 0.02°
+Mean error: 1.33°
+
+Output angles (top 3):  [-106.40081666 -109.54491666 -102.1436144 ]
+Target angles (top 3):  [-103.77675146 -106.93397809  -99.44530512]
+Mean inconsistency: 0.06°
+Mean error: 2.62°
+
+Output angles (top 3):  [ -99.80949287 -123.65923621 -109.18909113]
+Target angles (top 3):  [ -99.94589835 -123.79589682 -109.41253622]
+Mean inconsistency: 0.06°
+Mean error: 0.14°
+
+Output angles (top 3):  [ 97.69875951  99.00945232 101.17518236]
+Target angles (top 3):  [95.12503146 96.43899557 98.62649114]
+Mean inconsistency: 0.02°
+Mean error: 2.57°
+
+Output angles (top 3):  [81.25254508 80.84422954 77.04589305]
+Target angles (top 3):  [79.68685556 79.2558767  75.4343628 ]
+Mean inconsistency: 0.03°
+Mean error: 1.58°
+
+Output angles (top 3):  [91.18015674 91.39065634 99.13249818]
+Target angles (top 3):  [ 93.25844955  93.4750849  101.22961029]
+Mean inconsistency: 0.01°
+Mean error: 2.08°
+
+Output angles (top 3):  [ 98.509421    99.06151885 103.41189173]
+Target angles (top 3):  [ 96.83668557  97.42522782 101.88192274]
+Mean inconsistency: 0.10°
+Mean error: 1.65°
+
+Output angles (top 3):  [92.76915244 93.5192848  93.83830927]
+Target angles (top 3):  [94.0383597  94.74745227 95.167946  ]
+Mean inconsistency: 0.07°
+Mean error: 1.25°
+
+Output angles (top 3):  [-105.77279443 -108.89811141 -111.71432135]
+Target angles (top 3):  [-100.42878718 -103.6214799  -106.26625308]
+Mean inconsistency: 0.11°
+Mean error: 5.31°
+
+Output angles (top 3):  [83.58993827 81.97731695 80.00604922]
+Target angles (top 3):  [85.29290381 83.67171972 81.75488942]
+Mean inconsistency: 0.04°
+Mean error: 1.70°
+
+Output angles (top 3):  [-87.2941411  -87.06983086 -78.68587611]
+Target angles (top 3):  [-95.89932662 -96.19016    -95.44096039]
+Mean inconsistency: 5.43°
+
+Output angles (top 3):  [117.24605741 121.95278174 117.4010344 ]
+Target angles (top 3):  [114.76877487 121.05572617 129.6745011 ]
+Mean inconsistency: 9.83°
+
+Output angles (top 3):  [-90.35687306 -90.34060355 -88.54672949]
+Target angles (top 3):  [-90.98827618 -90.96965505 -89.17314588]
+Mean inconsistency: 0.00°
+Mean error: 0.63°
+
+Output angles (top 3):  [103.84138086 109.26687332 121.63952195]
+Target angles (top 3):  [101.26364398 106.604069   118.79981944]
+Mean inconsistency: 0.17°
+Mean error: 2.62°
+
+Output angles (top 3):  [92.93866407 94.45734981 96.00798716]
+Target angles (top 3):  [100.08157475 101.59429792 103.5766173 ]
+Mean inconsistency: 0.29°
+Mean error: 7.14°
+
+Output angles (top 3):  [104.92596709 119.56281659 115.02593174]
+Target angles (top 3):  [104.77014569 119.36624552 114.7616702 ]
+Mean inconsistency: 0.07°
+Mean error: 0.18°
+
+Output angles (top 3):  [117.91706885 123.83351531 103.52070348]
+Target angles (top 3):  [116.26843461 122.19356305 101.85069654]
+Mean inconsistency: 0.02°
+Mean error: 1.64°
+
+Output angles (top 3):  [100.01331937 103.4370883   99.16113033]
+Target angles (top 3):  [100.7881463  104.08523194  99.50179876]
+Mean inconsistency: 0.29°
+Mean error: 0.71°
+
+Output angles (top 3):  [ 98.05820505  98.70275634 100.2366529 ]
+Target angles (top 3):  [97.04335145 97.65750491 98.71621633]
+Mean inconsistency: 0.34°
+Mean error: 1.03°
+
+Output angles (top 3):  [-85.17253408 -84.98787992 -86.74235744]
+Target angles (top 3):  [-83.08650063 -82.91054529 -84.6780628 ]
+Mean inconsistency: 0.01°
+Mean error: 2.08°
+
+Output angles (top 3):  [111.7724326  121.72861494 104.99015037]
+Target angles (top 3):  [111.60713646 121.54497483 104.75966056]
+Mean inconsistency: 0.04°
+Mean error: 0.17°
+
+Output angles (top 3):  [102.9811117 117.5529378 100.8039206]
+Target angles (top 3):  [102.58299389 117.11755806 100.63780218]
+Mean inconsistency: 0.18°
+Mean error: 0.42°
+
+Output angles (top 3):  [105.69568159 117.41763176 112.2109444 ]
+Target angles (top 3):  [103.56836671 115.4173058  110.35304644]
+Mean inconsistency: 0.18°
+Mean error: 2.06°
+
+Output angles (top 3):  [ 97.46511923 110.58083779 102.68128689]
+Target angles (top 3):  [100.67768004 113.81027378 105.63960914]
+Mean inconsistency: 0.18°
+Mean error: 3.22°
+
+Output angles (top 3):  [124.21767247 111.82083815 126.44442342]
+Target angles (top 3):  [143.90889267 131.54835956 146.2435238 ]
+Mean inconsistency: 0.07°
+Mean error: 19.71°
+
+Output angles (top 3):  [128.47569436 115.41937795 130.74872668]
+Target angles (top 3):  [131.95137808 118.96700852 134.41784679]
+Mean inconsistency: 0.13°
+Mean error: 3.51°
+
+Output angles (top 3):  [114.07253978 119.55232542 106.89830715]
+Target angles (top 3):  [116.2563452  121.71170555 109.34595852]
+Mean inconsistency: 0.19°
+Mean error: 2.17°
+
+Output angles (top 3):  [-31.00983064 -46.74447596 -67.82463223]
+Target angles (top 3):  [-46.55482621 -49.32691061 -36.24319018]
+Mean inconsistency: 31.42°
+
+Output angles (top 3):  [ 98.30971993 101.10634772  96.90859542]
+Target angles (top 3):  [ 97.79226459 100.62370742  96.75337751]
+Mean inconsistency: 0.24°
+Mean error: 0.50°
+
+Output angles (top 3):  [165.40155483 166.27568244 165.87734581]
+Target angles (top 3):  [170.91777936 171.79090974 171.42822746]
+Mean inconsistency: 0.02°
+Mean error: 5.52°
+
+Output angles (top 3):  [-126.68689514 -127.03015313 -126.43139142]
+Target angles (top 3):  [-120.23187015 -120.67092771 -119.80788138]
+Mean inconsistency: 0.18°
+Mean error: 6.41°
+
+Output angles (top 3):  [93.81079727 94.40973656 94.37428788]
+Target angles (top 3):  [93.97287063 94.57201259 94.52766566]
+Mean inconsistency: 0.01°
+Mean error: 0.16°
+
+Output angles (top 3):  [-42.96178743 -43.52086573 -37.49916947]
+Target angles (top 3):  [-39.51311761 -40.0752465  -34.01621782]
+Mean inconsistency: 0.02°
+Mean error: 3.45°
+
+Output angles (top 3):  [-29.3467513  -33.88223596 -39.38901451]
+Target angles (top 3):  [-29.80715526 -34.32681824 -39.87241944]
+Mean inconsistency: 0.03°
+Mean error: 0.45°
+
+Output angles (top 3):  [-36.89690729 -38.04860355 -33.94493027]
+Target angles (top 3):  [-37.84953465 -38.68530819 -36.81339777]
+Mean inconsistency: 1.49°
+
+Output angles (top 3):  [-48.90024759 -50.77520965 -62.21711523]
+Target angles (top 3):  [-41.15790755 -42.24692843 -40.09753456]
+Mean inconsistency: 9.58°
+
+Output angles (top 3):  [-42.88193568 -45.37751605 -35.61322446]
+Target angles (top 3):  [-36.83007085 -39.36815929 -29.36895714]
+Mean inconsistency: 0.16°
+Mean error: 6.03°
+
+Output angles (top 3):  [ 98.11090679 103.07544344 101.18535935]
+Target angles (top 3):  [ 96.00257362 100.98209252  99.17160318]
+Mean inconsistency: 0.06°
+Mean error: 2.10°
+
+Output angles (top 3):  [ -97.41700738 -106.65696242  -95.9818412 ]
+Target angles (top 3):  [-115.54822666 -124.88686576 -113.99362027]
+Mean inconsistency: 0.15°
+Mean error: 18.18°
+
+Output angles (top 3):  [92.56516201 92.35888347 91.92901185]
+Target angles (top 3):  [83.1738194  82.95145448 82.47727461]
+Mean inconsistency: 0.04°
+Mean error: 9.40°
+
+Output angles (top 3):  [-18.83262447 -42.59549804 -19.91332773]
+Target angles (top 3):  [-15.22073842 -38.94921255 -16.34814747]
+Mean inconsistency: 0.05°
+Mean error: 3.63°
+
+Output angles (top 3):  [-44.14043219 -45.02504414 -42.02819619]
+Target angles (top 3):  [-32.98695643 -33.57332144 -30.20123563]
+Mean inconsistency: 0.45°
+Mean error: 11.30°
+
+Output angles (top 3):  [113.45855359 120.30184306 112.97270857]
+Target angles (top 3):  [108.00483621 114.85867195 107.47548051]
+Mean inconsistency: 0.04°
+Mean error: 5.45°
+
+Output angles (top 3):  [-85.2514296  -88.62736671 -86.00029154]
+Target angles (top 3):  [-83.14322345 -86.51301743 -83.93768673]
+Mean inconsistency: 0.03°
+Mean error: 2.11°
+
+Output angles (top 3):  [-59.70982108 -34.0240785  -69.24535256]
+Target angles (top 3):  [-56.54062114 -30.88282623 -66.2612512 ]
+Mean inconsistency: 0.12°
+Mean error: 3.16°
+
+Output angles (top 3):  [105.43603195 110.69700565 104.74534956]
+Target angles (top 3):  [101.50841155 106.76518473 100.8370196 ]
+Mean inconsistency: 0.02°
+Mean error: 3.93°
+
+Output angles (top 3):  [106.45136006 114.37496007 105.29006398]
+Target angles (top 3):  [105.26500933 113.18317147 104.16550332]
+Mean inconsistency: 0.04°
+Mean error: 1.19°
+
+Output angles (top 3):  [104.08475416 103.80503742 103.87985531]
+Target angles (top 3):  [-6.54082889 -6.77482486 -7.29237763]
+Mean inconsistency: 0.39°
+Mean error: 110.60°
+
+Output angles (top 3):  [103.74890693 107.82607907 100.026809  ]
+Target angles (top 3):  [104.83672338 108.91515156 101.1072838 ]
+Mean inconsistency: 0.01°
+Mean error: 1.09°
+
+Output angles (top 3):  [-56.09915769 -92.78279916 -56.1840706 ]
+Target angles (top 3):  [-56.6456443  -93.31706314 -56.65131659]
+Mean inconsistency: 0.05°
+Mean error: 0.54°
+
+Output angles (top 3):  [-2.50673919 -9.59724224 -6.65839967]
+Target angles (top 3):  [-15.86709211 -22.91527513 -19.866624  ]
+Mean inconsistency: 0.10°
+Mean error: 13.34°
+
+Output angles (top 3):  [ 2.24434467 -7.79552542  4.41692112]
+Target angles (top 3):  [-13.84735858 -23.91823775 -10.29135332]
+Mean inconsistency: 0.94°
+Mean error: 16.11°
+
+Output angles (top 3):  [101.10079477 105.07302106 103.35886897]
+Target angles (top 3):  [95.98693187 99.93632995 98.17150535]
+Mean inconsistency: 0.05°
+Mean error: 5.13°
+
+Output angles (top 3):  [-73.00871849 -73.80582206 -80.35529045]
+Target angles (top 3):  [-69.14523427 -69.99269614 -76.59528988]
+Mean inconsistency: 0.07°
+Mean error: 3.84°
+
+Output angles (top 3):  [-21.30351029 -23.01475954 -12.09092723]
+Target angles (top 3):  [-25.31081167 -26.97525407 -15.90427707]
+Mean inconsistency: 0.13°
+Mean error: 3.98°
+
+Output angles (top 3):  [96.85575024 97.21638423 97.55196508]
+Target angles (top 3):  [ 99.47246332  99.83663529 100.16213262]
+Mean inconsistency: 0.01°
+Mean error: 2.62°
+
+Output angles (top 3):  [82.21968621 86.25018767 85.56398588]
+Target angles (top 3):  [74.35743133 78.35810913 76.93356417]
+Mean inconsistency: 0.51°
+Mean error: 7.88°
+
+Output angles (top 3):  [129.1131969  125.41708101 120.34771461]
+Target angles (top 3):  [132.6651116  128.96025191 123.81961727]
+Mean inconsistency: 0.05°
+Mean error: 3.55°
+
+Output angles (top 3):  [ -61.34403946 -109.11022976  -59.80438505]
+Target angles (top 3):  [ -56.773242   -104.67234179  -55.01701177]
+Mean inconsistency: 0.23°
+Mean error: 4.50°
+
+Output angles (top 3):  [169.13616566 167.13016642 167.85531395]
+Target angles (top 3):  [177.5448957  175.6198721  176.52927071]
+Mean inconsistency: 0.18°
+Mean error: 8.45°
+
+Output angles (top 3):  [15.53419122 10.12644956 19.91422932]
+Target angles (top 3):  [4.67900254 0.95047969 6.87658216]
+Mean inconsistency: 2.57°
+
+Output angles (top 3):  [102.16668677 102.76340625 107.5758346 ]
+Target angles (top 3):  [103.18906865 103.79222132 108.50101766]
+Mean inconsistency: 0.07°
+Mean error: 1.03°
+
+Output angles (top 3):  [-94.26326998 -96.07863864 -87.41071877]
+Target angles (top 3):  [ -99.23634741 -100.99882289  -92.25674744]
+Mean inconsistency: 0.08°
+Mean error: 4.95°
+
+Output angles (top 3):  [103.84511014 120.12021467 107.75664337]
+Target angles (top 3):  [101.35497345 117.6464554  105.3047726 ]
+Mean inconsistency: 0.03°
+Mean error: 2.48°
+
+Output angles (top 3):  [ -92.26629342 -109.17245279 -120.25405906]
+Target angles (top 3):  [ -98.51957721 -115.41971222 -126.64200737]
+Mean inconsistency: 0.09°
+Mean error: 6.25°
+
+Output angles (top 3):  [-103.00662246 -105.44443992 -104.80072191]
+Target angles (top 3):  [ -99.89679586 -102.39111033 -101.81540234]
+Mean inconsistency: 0.08°
+Mean error: 3.08°
+
+Output angles (top 3):  [109.27037038 108.94492553 108.37139454]
+Target angles (top 3):  [110.06473408 109.73929405 109.1670811 ]
+Mean inconsistency: 0.00°
+Mean error: 0.79°
+
+Output angles (top 3):  [115.11793438 114.66792054 117.31129937]
+Target angles (top 3):  [109.81584121 109.34303644 111.9365872 ]
+Mean inconsistency: 0.05°
+Mean error: 5.31°
+
+Output angles (top 3):  [ 99.37378144 100.4573568  103.36236603]
+Target angles (top 3):  [ 98.68309937  99.76994301 102.63696652]
+Mean inconsistency: 0.03°
+Mean error: 0.69°
+
+Output angles (top 3):  [ -97.31946545 -110.36261325 -103.94551392]
+Target angles (top 3):  [ -96.94193792 -109.99546348 -103.72449771]
+Mean inconsistency: 0.10°
+Mean error: 0.37°
+
+Output angles (top 3):  [-91.34884192 -91.91965449 -93.27357557]
+Target angles (top 3):  [-93.55123099 -94.10785948 -95.40898934]
+Mean inconsistency: 0.04°
+Mean error: 2.20°
+
+Output angles (top 3):  [117.31919507 120.26460487 111.91271785]
+Target angles (top 3):  [112.54134415 115.5489715  107.04919991]
+Mean inconsistency: 0.10°
+Mean error: 4.75°
+
+Output angles (top 3):  [ -88.23575098 -100.83843355  -96.65054404]
+Target angles (top 3):  [ -88.16158889 -100.67768004  -96.00870427]
+Mean inconsistency: 0.38°
+Mean error: 0.12°
+
+Output angles (top 3):  [106.11433121 117.02029233 111.79748573]
+Target angles (top 3):  [102.45505242 113.34921464 108.04866748]
+Mean inconsistency: 0.06°
+Mean error: 3.67°
+
+Output angles (top 3):  [-90.15777987 -89.55739942 -92.74950199]
+Target angles (top 3):  [-94.44619106 -93.83776718 -97.00129635]
+Mean inconsistency: 0.02°
+Mean error: 4.28°
+
+Output angles (top 3):  [ -95.10599921 -107.8010191   -95.58683087]
+Target angles (top 3):  [ -97.0088021  -109.78398476  -97.97962178]
+Mean inconsistency: 0.33°
+Mean error: 1.94°
+
+Output angles (top 3):  [-85.71851208 -85.70896348 -90.83174196]
+Target angles (top 3):  [-148.40936156 -149.54519309 -151.97550817]
+Mean inconsistency: 1.79°
+
+Output angles (top 3):  [110.74450279 103.21687617 104.86918772]
+Target angles (top 3):  [112.88443128 105.34900495 106.94079629]
+Mean inconsistency: 0.05°
+Mean error: 2.14°
+
+Output angles (top 3):  [111.44612714 113.1250696  114.6362831 ]
+Target angles (top 3):  [105.1677211  106.8605249  108.47804206]
+Mean inconsistency: 0.08°
+Mean error: 6.27°
+
+Output angles (top 3):  [110.40395639 107.74464955 106.6281117 ]
+Target angles (top 3):  [124.5604517  121.99457481 121.24405739]
+Mean inconsistency: 0.31°
+Mean error: 14.20°
+
+Output angles (top 3):  [156.69205277 150.86101099 155.42494339]
+Target angles (top 3):  [169.63739057 163.75448912 168.2075744 ]
+Mean inconsistency: 0.11°
+Mean error: 12.92°
+
+Output angles (top 3):  [106.9805358  102.92807528 103.82903188]
+Target angles (top 3):  [109.44078304 105.41317622 106.8172093 ]
+Mean inconsistency: 0.35°
+Mean error: 2.47°
+
+Output angles (top 3):  [103.45880147 102.84996524 106.14781963]
+Target angles (top 3):  [129.77986803 129.16376652 132.67066929]
+Mean inconsistency: 0.14°
+Mean error: 26.32°
+
+Output angles (top 3):  [122.31226826 120.21132939 124.62114541]
+Target angles (top 3):  [127.13664184 124.85558226 129.92075836]
+Mean inconsistency: 0.44°
+Mean error: 4.73°
+
+Output angles (top 3):  [-100.43862159 -105.08588231  -90.9819105 ]
+Target angles (top 3):  [-104.37640909 -109.03020148  -94.66460257]
+Mean inconsistency: 0.17°
+Mean error: 3.94°
+
+Output angles (top 3):  [125.26870198 112.08809662 118.95958794]
+Target angles (top 3):  [130.55513723 117.38501476 124.18883128]
+Mean inconsistency: 0.05°
+Mean error: 5.29°
+
+Output angles (top 3):  [ 98.71656698 117.01708214 101.37112   ]
+Target angles (top 3):  [ 99.43132495 117.74236853 101.96597564]
+Mean inconsistency: 0.09°
+Mean error: 0.72°
+
+Output angles (top 3):  [-14.0941295  -16.24182785  -6.22083897]
+Target angles (top 3):  [-6.6492898  -8.65429831  0.86551005]
+Mean inconsistency: 0.33°
+Mean error: 7.52°
+
+Output angles (top 3):  [121.41897514 109.00992844 113.07587175]
+Target angles (top 3):  [124.80367229 112.36515963 116.38772442]
+Mean inconsistency: 0.05°
+Mean error: 3.37°
+
+Output angles (top 3):  [105.53347826 112.27636395 106.24445997]
+Target angles (top 3):  [ 98.21762845 104.95968012  98.78732039]
+Mean inconsistency: 0.09°
+Mean error: 7.32°
+
+Output angles (top 3):  [113.70801259 105.56060094 122.13389104]
+Target angles (top 3):  [112.43488859 104.27637066 121.086494  ]
+Mean inconsistency: 0.16°
+Mean error: 1.28°
+
+Output angles (top 3):  [105.81672621 120.04926266 122.58539386]
+Target angles (top 3):  [106.2157755  120.43022814 123.04457727]
+Mean inconsistency: 0.05°
+Mean error: 0.39°
+
+Output angles (top 3):  [105.86803459 113.02679684 107.35570443]
+Target angles (top 3):  [106.35431669 113.47893228 108.06998151]
+Mean inconsistency: 0.17°
+Mean error: 0.47°
+
+Output angles (top 3):  [ 99.44820318 105.36564002 100.0108127 ]
+Target angles (top 3):  [105.84845226 111.6106888  106.57845778]
+Mean inconsistency: 0.22°
+Mean error: 6.32°
+
+Output angles (top 3):  [112.27492961 112.8947966  111.95153382]
+Target angles (top 3):  [116.01432782 116.6364454  115.75896053]
+Mean inconsistency: 0.05°
+Mean error: 3.74°
+
+Output angles (top 3):  [110.54358594 113.43325457 113.06176741]
+Target angles (top 3):  [111.91406995 114.8824497  114.3163674 ]
+Mean inconsistency: 0.13°
+Mean error: 1.41°
+
+Output angles (top 3):  [102.69197613 111.38249027 107.41796844]
+Target angles (top 3):  [111.15295282 119.91983734 115.6602972 ]
+Mean inconsistency: 0.20°
+Mean error: 8.50°
+
+Output angles (top 3):  [104.65630439]
+Target angles (top 3):  [113.72954402]
+
+Output angles (top 3):  [106.16477899]
+Target angles (top 3):  [111.66059343]
+
+Output angles (top 3):  [-38.28062507]
+Target angles (top 3):  [110.84321183]
+
+Output angles (top 3):  [-90.00938718 -88.80859212 -89.23002162]
+Target angles (top 3):  [-91.07152694 -89.87175332 -90.29075736]
+Mean inconsistency: 0.00°
+Mean error: 1.06°
+
+Output angles (top 3):  [105.60553676 109.76894687 108.3272442 ]
+Target angles (top 3):  [107.98008444 112.07667538 110.944167  ]
+Mean inconsistency: 0.21°
+Mean error: 2.34°
+
+Output angles (top 3):  [105.15675235 106.23206318 109.72837554]
+Target angles (top 3):  [103.06995072 104.21798626 108.10665081]
+Mean inconsistency: 0.31°
+Mean error: 2.05°
+
+Output angles (top 3):  [102.19450614 105.69409699  94.58641989]
+Target angles (top 3):  [102.89989685 106.33260159  95.4678894 ]
+Mean inconsistency: 0.16°
+Mean error: 0.67°
+
+Output angles (top 3):  [93.70884987 94.21373062 97.70228389]
+Target angles (top 3):  [93.48333549 93.99298145 97.44980771]
+Mean inconsistency: 0.02°
+Mean error: 0.22°
+
+Output angles (top 3):  [-133.58858273 -145.74672926 -132.95192714]
+Target angles (top 3):  [-117.05934555 -129.18307519 -115.37284428]
+Mean inconsistency: 0.70°
+Mean error: 16.55°
+
+Output angles (top 3):  [101.20767357 102.39304607  96.00705143]
+Target angles (top 3):  [101.23660037 102.39884526  96.2783382 ]
+Mean inconsistency: 0.18°
+Mean error: 0.02°
+
+Output angles (top 3):  [ 99.08158595 100.45246639  98.26154661]
+Target angles (top 3):  [94.94804479 96.29988142 94.35480429]
+Mean inconsistency: 0.16°
+Mean error: 4.14°
+
+Output angles (top 3):  [-88.49776387 -89.62229304 -86.96652425]
+Target angles (top 3):  [-94.8027427  -95.86724099 -93.14001918]
+Mean inconsistency: 0.09°
+Mean error: 6.27°
+
+Output angles (top 3):  [-102.43294121 -111.61729168 -101.61736198]
+Target angles (top 3):  [-110.43612532 -119.70325929 -109.84827062]
+Mean inconsistency: 0.15°
+Mean error: 8.04°
+
+Output angles (top 3):  [-107.0108755  -113.93118219 -108.04575844]
+Target angles (top 3):  [-109.97649858 -116.81538012 -111.2170095 ]
+Mean inconsistency: 0.19°
+Mean error: 2.92°
+
+Output angles (top 3):  [-88.58086678 -88.32948167 -88.65224909]
+Target angles (top 3):  [-89.73160784 -89.4824858  -89.81147816]
+Mean inconsistency: 0.01°
+Mean error: 1.15°
+
+Output angles (top 3):  [-88.58045014 -50.8871906 ]
+Target angles (top 3):  [-83.82573078 -87.33360758]
+
+Output angles (top 3):  [-76.73354849 -84.53159596 -80.06347745]
+Target angles (top 3):  [-77.40298849 -84.75071384 -79.55066349]
+Mean inconsistency: 0.79°
+Mean error: 0.44°
+
+Output angles (top 3):  [-78.4676379  -80.24703878 -70.72069391]
+Target angles (top 3):  [-75.28040904 -77.03400367 -67.60323295]
+Mean inconsistency: 0.06°
+Mean error: 3.20°
+
+Output angles (top 3):  [-57.42545065 -59.85020879 -56.17236366]
+Target angles (top 3):  [-59.95562149 -62.39143696 -58.84981294]
+Mean inconsistency: 0.10°
+Mean error: 2.54°
+
+Output angles (top 3):  [-90.18378923 -92.04711265 -84.98004569]
+Target angles (top 3):  [-63.05618259 -65.0109427  -58.29639301]
+Mean inconsistency: 0.30°
+Mean error: 27.08°
+
+Output angles (top 3):  [-21.70104779 -20.49354547 -17.01792517]
+Target angles (top 3):  [127.3680022  129.82948618 129.21441599]
+Mean inconsistency: 2.73°
+
+Output angles (top 3):  [122.17943474 124.36258177 111.02830398]
+Target angles (top 3):  [122.29388796 124.45204809 110.9115657 ]
+Mean inconsistency: 0.15°
+Mean error: 0.10°
+
+Output angles (top 3):  [-39.27998761 -36.86628072 -40.94742462]
+Target angles (top 3):  [28.03247579 30.34728258 27.76272726]
+Mean inconsistency: 1.00°
+Mean error: 67.26°
+
+Output angles (top 3):  [122.6141353  130.19807683 106.48440452]
+Target angles (top 3):  [122.43752848 130.01489532 106.3894963 ]
+Mean inconsistency: 0.06°
+Mean error: 0.18°
+
+Output angles (top 3):  [-60.99735272 -62.77467723 -66.27855061]
+Target angles (top 3):  [-51.02458456 -52.80814488 -56.17272494]
+Mean inconsistency: 0.09°
+Mean error: 9.97°
+
+Output angles (top 3):  [113.36520539 118.57482973 107.31954541]
+Target angles (top 3):  [111.55293466 116.76364203 105.57434925]
+Mean inconsistency: 0.04°
+Mean error: 1.81°
+
+Output angles (top 3):  [104.77978738 107.35833405 111.36165819]
+Target angles (top 3):  [102.53429248 105.11059721 109.11975479]
+Mean inconsistency: 0.00°
+Mean error: 2.25°
+
+Output angles (top 3):  [-55.64851547 -61.44147211 -56.35589084]
+Target angles (top 3):  [-49.30576847 -55.06943741 -49.7764533 ]
+Mean inconsistency: 0.16°
+Mean error: 6.36°
+
+Output angles (top 3):  [-70.76657229 -74.73202986 -70.27521531]
+Target angles (top 3):  [-52.29076399 -56.38466203 -52.21415953]
+Mean inconsistency: 0.28°
+Mean error: 18.41°
+
+Output angles (top 3):  [-63.32221251 -63.48520132 -76.31573216]
+Target angles (top 3):  [-52.32875109 -52.54550103 -64.86283311]
+Mean inconsistency: 0.34°
+Mean error: 10.97°
+
+Output angles (top 3):  [-65.39477194 -66.46064345 -74.60901132]
+Target angles (top 3):  [-48.26562089 -49.30588306 -58.04411969]
+Mean inconsistency: 0.39°
+Mean error: 17.14°
+
+Output angles (top 3):  [113.91792479 119.94986975 105.75711915]
+Target angles (top 3):  [115.94219244 121.99113706 107.71056509]
+Mean inconsistency: 0.06°
+Mean error: 2.03°
+
+Output angles (top 3):  [106.70667937 110.68410342  98.39364247]
+Target angles (top 3):  [105.05605162 109.05117174  96.70897328]
+Mean inconsistency: 0.03°
+Mean error: 1.64°
+
+Output angles (top 3):  [-58.72376033 -60.25180342 -51.55320918]
+Target angles (top 3):  [-62.21078337 -63.75209713 -55.07178654]
+Mean inconsistency: 0.02°
+Mean error: 3.49°
+
+Output angles (top 3):  [-65.17114472 -65.8332496  -59.87795985]
+Target angles (top 3):  [-56.25992912 -56.91516365 -50.94190675]
+Mean inconsistency: 0.02°
+Mean error: 8.91°
+
+Output angles (top 3):  [-63.36637652 -65.48004686 -63.0863251 ]
+Target angles (top 3):  [-52.58904582 -54.80049102 -53.25344768]
+Mean inconsistency: 0.63°
+Mean error: 10.73°
+
+Output angles (top 3):  [-47.81577064 -50.09344749 -48.59243828]
+Target angles (top 3):  [-53.55155762 -55.85862948 -54.24942021]
+Mean inconsistency: 0.07°
+Mean error: 5.75°
+
+Output angles (top 3):  [94.1142011  98.59951803 93.20934447]
+Target angles (top 3):  [105.85962493 110.41945225 105.31393993]
+Mean inconsistency: 0.24°
+Mean error: 11.78°
+
+Output angles (top 3):  [104.67157669 107.42665644 101.8277523 ]
+Target angles (top 3):  [102.81721904 105.52771048  99.84941225]
+Mean inconsistency: 0.08°
+Mean error: 1.88°
+
+Output angles (top 3):  [-85.04952238 -86.68765446 -86.3344039 ]
+Target angles (top 3):  [-58.27868861 -59.4870566  -60.88083373]
+Mean inconsistency: 1.16°
+
+Output angles (top 3):  [122.37964125 123.58096224 116.40317108]
+Target angles (top 3):  [125.14486865 126.30447794 119.21859429]
+Mean inconsistency: 0.06°
+Mean error: 2.74°
+
+Output angles (top 3):  [111.20803358 111.34657713 111.04836424]
+Target angles (top 3):  [110.40839416 110.54859694 110.2327826 ]
+Mean inconsistency: 0.01°
+Mean error: 0.80°
+
+Output angles (top 3):  [89.06479934 90.14324523 88.7560543 ]
+Target angles (top 3):  [86.63935462 87.32827908 85.32642184]
+Mean inconsistency: 0.67°
+Mean error: 2.62°
+
+Output angles (top 3):  [-54.78397062 -67.74829804 -83.14081235]
+Target angles (top 3):  [-57.45987463 -70.51872869 -85.65890925]
+Mean inconsistency: 0.17°
+Mean error: 2.72°
+
+Output angles (top 3):  [-91.56902673 -91.51657771 -91.52545012]
+Target angles (top 3):  [-90.37057038 -90.28840823 -90.40941692]
+Mean inconsistency: 0.07°
+Mean error: 1.21°
+
+Output angles (top 3):  [-68.08279972 -90.51337318 -73.50113415]
+Target angles (top 3):  [-67.72567403 -90.27889713 -73.88411089]
+Mean inconsistency: 0.49°
+Mean error: 0.30°
+
+Output angles (top 3):  [-56.44775006 -60.24636659 -59.97325465]
+Target angles (top 3):  [-53.55023981 -57.36006538 -57.10939634]
+Mean inconsistency: 0.02°
+Mean error: 2.89°
+
+Output angles (top 3):  [122.08648953 123.5745965  121.49920254]
+Target angles (top 3):  [121.82211451 123.31266422 121.24967238]
+Mean inconsistency: 0.01°
+Mean error: 0.26°
+
+Output angles (top 3):  [-94.01316894 -94.15778454 -95.02243868]
+Target angles (top 3):  [-53.3400789  -53.50778364 -54.3241912 ]
+Mean inconsistency: 0.03°
+Mean error: 40.66°
+
+Output angles (top 3):  [107.4730061  108.54425297 105.68786786]
+Target angles (top 3):  [105.38836715 106.45916797 103.60841646]
+Mean inconsistency: 0.00°
+Mean error: 2.08°
+
+Output angles (top 3):  [110.72263252 110.83959268 109.39457737]
+Target angles (top 3):  [108.82857764 108.94116384 107.47685561]
+Mean inconsistency: 0.02°
+Mean error: 1.90°
+
+Output angles (top 3):  [121.9858262  120.79744159 119.96721843]
+Target angles (top 3):  [143.45751652 142.22743343 141.5897314 ]
+Mean inconsistency: 0.13°
+Mean error: 21.45°
+
+Output angles (top 3):  [113.8363655  115.70367775 113.64479918]
+Target angles (top 3):  [112.47184437 114.3407181  112.31514041]
+Mean inconsistency: 0.02°
+Mean error: 1.36°
+
+Output angles (top 3):  [-88.1892169  -88.73792015 -90.13421572]
+Target angles (top 3):  [-48.1405442  -48.68600002 -50.10527378]
+Mean inconsistency: 0.02°
+Mean error: 40.05°
+
+Output angles (top 3):  [113.34761082 112.73477893 112.82874867]
+Target angles (top 3):  [123.69488436 123.08044442 123.14507406]
+Mean inconsistency: 0.02°
+Mean error: 10.35°
+
+Output angles (top 3):  [105.73200454 109.60617663 110.38666918]
+Target angles (top 3):  [102.20976919 106.12524817 106.60418359]
+Mean inconsistency: 0.20°
+Mean error: 3.50°
+
+Output angles (top 3):  [113.36968599 113.40562645 112.97146548]
+Target angles (top 3):  [134.2317501  134.32147529 134.30812538]
+Mean inconsistency: 0.32°
+Mean error: 20.89°
+
+Output angles (top 3):  [99.5408547  98.83125269 97.49323912]
+Target angles (top 3):  [102.55423141 101.83935197 100.56136961]
+Mean inconsistency: 0.04°
+Mean error: 3.01°
+
+Output angles (top 3):  [100.82291536 101.49032046 101.3109392 ]
+Target angles (top 3):  [101.67405365 102.24569364 101.88404268]
+Mean inconsistency: 0.19°
+Mean error: 0.80°
+
+Output angles (top 3):  [101.65995504  98.62654509  98.84375876]
+Target angles (top 3):  [98.80433723 96.16861679 96.8023654 ]
+Mean inconsistency: 0.54°
+Mean error: 2.66°
+
+Output angles (top 3):  [-60.58058141 -92.45671227 -85.89194425]
+Target angles (top 3):  [-59.58491779 -91.47219633 -84.95096259]
+Mean inconsistency: 0.04°
+Mean error: 0.99°
+
+Output angles (top 3):  [98.15036479 98.13486026 98.08453542]
+Target angles (top 3):  [94.77059977 94.75409858 94.71124134]
+Mean inconsistency: 0.00°
+Mean error: 3.38°
+
+Output angles (top 3):  [-116.56447283 -119.22502276 -119.40329069]
+Target angles (top 3):  [-125.13868071 -130.45475502 -120.74420901]
+Mean inconsistency: 6.59°
+
+Output angles (top 3):  [-154.22960565 -152.86933249 -154.20654693]
+Target angles (top 3):  [-155.03246719 -153.61113079 -154.77916255]
+Mean inconsistency: 0.15°
+Mean error: 0.77°
+
+Output angles (top 3):  [89.16168558 91.32266864 91.1754644 ]
+Target angles (top 3):  [87.05589494 89.25823011 89.01248852]
+Mean inconsistency: 0.07°
+Mean error: 2.09°
+
+Output angles (top 3):  [101.10513877 100.10705689  99.38798824]
+Target angles (top 3):  [93.6881106  92.71459801 92.04933672]
+Mean inconsistency: 0.05°
+Mean error: 7.40°
+
+Output angles (top 3):  [-131.17752595 -136.77789858 -105.57333925]
+Target angles (top 3):  [-131.08460753 -136.63376107 -105.74921597]
+Mean inconsistency: 0.21°
+Mean error: 0.12°
+
+Output angles (top 3):  [112.93957532 126.82489228 110.05615632]
+Target angles (top 3):  [112.19012102 126.07993578 109.28373531]
+Mean inconsistency: 0.02°
+Mean error: 0.75°
+
+Output angles (top 3):  [ -99.37272959 -101.01133296  -98.14728437]
+Target angles (top 3):  [-102.64372742 -104.27751657 -101.65130722]
+Mean inconsistency: 0.16°
+Mean error: 3.27°
+
+Output angles (top 3):  [-106.06477136 -112.56153801 -104.62153872]
+Target angles (top 3):  [-103.95843638 -110.50499485 -102.71357098]
+Mean inconsistency: 0.13°
+Mean error: 2.08°
+
+Output angles (top 3):  [-89.1485921  -89.05663727 -90.96592103]
+Target angles (top 3):  [-88.56374797 -88.50261337 -90.58434093]
+Mean inconsistency: 0.14°
+Mean error: 0.57°
+
+Output angles (top 3):  [-87.32696699 -88.59294255 -86.27120416]
+Target angles (top 3):  [-94.07119019 -95.47505137 -94.0533139 ]
+Mean inconsistency: 0.69°
+Mean error: 6.81°
+
+Output angles (top 3):  [-87.67594868 -88.16649969 -87.27399887]
+Target angles (top 3):  [-93.15835383 -93.62273612 -92.82764259]
+Mean inconsistency: 0.06°
+Mean error: 5.47°
+
+Output angles (top 3):  [-91.00137654 -91.52906329 -91.75966414]
+Target angles (top 3):  [-91.48932777 -92.03317931 -92.13081132]
+Mean inconsistency: 0.09°
+Mean error: 0.50°
+
+Output angles (top 3):  [104.74675658 105.12136514 102.15564236]
+Target angles (top 3):  [108.21081454 108.64992939 105.77752008]
+Mean inconsistency: 0.11°
+Mean error: 3.50°
+
+Output angles (top 3):  [-83.86785184 -82.5540308  -86.72470823]
+Target angles (top 3):  [-93.10140182 -93.5076289  -93.21358696]
+Mean inconsistency: 2.98°
+
+Output angles (top 3):  [160.01860078 157.02774291 143.34446977]
+Target angles (top 3):  [154.94027828 151.96639814 138.48407097]
+Mean inconsistency: 0.15°
+Mean error: 5.07°
+
+Output angles (top 3):  [90.35297302 90.35014532 90.39144065]
+Target angles (top 3):  [-49.11359842 -49.10368625 -49.10087876]
+Mean inconsistency: 0.03°
+Mean error: 139.46°
+
+Output angles (top 3):  [-20.11292635 -20.46792543 -17.45984865]
+Target angles (top 3):  [-30.87062223 -31.47795749 -28.97298601]
+Mean inconsistency: 0.50°
+Mean error: 10.88°
+
+Output angles (top 3):  [-78.95808647 -81.49059767 -81.23363912]
+Target angles (top 3):  [-39.44997766 -42.48590913 -40.84788009]
+Mean inconsistency: 0.92°
+Mean error: 39.26°
+
+Output angles (top 3):  [94.10543797 94.14941756 93.14393858]
+Target angles (top 3):  [94.60203558 94.64317395 93.64359178]
+Mean inconsistency: 0.00°
+Mean error: 0.50°
+
+Output angles (top 3):  [ -89.70035528  -89.60981429 -147.64169695]
+Target angles (top 3):  [ -93.39395407  -93.30142139 -151.39091933]
+Mean inconsistency: 0.04°
+Mean error: 3.69°
+
+Output angles (top 3):  [-87.75933163 -87.96825345 -87.76909197]
+Target angles (top 3):  [51.31283962 51.11614321 51.27708706]
+Mean inconsistency: 0.03°
+Mean error: 139.08°
+
+Output angles (top 3):  [-113.9773406  -113.8472938  -114.29976651]
+Target angles (top 3):  [-130.67975555 -130.55032438 -130.99843467]
+Mean inconsistency: 0.00°
+Mean error: 16.70°
+
+Output angles (top 3):  [-119.19565294 -119.15142064 -119.14655754]
+Target angles (top 3):  [-123.45865386 -123.41459341 -123.41086918]
+Mean inconsistency: 0.00°
+Mean error: 4.26°
+
+Output angles (top 3):  [-87.27124631 -87.25948472 -87.27128729]
+Target angles (top 3):  [-94.14991459 -94.13874191 -94.1442996 ]
+Mean inconsistency: 0.00°
+Mean error: 6.88°
+
+Output angles (top 3):  [101.03325786 111.3517954  100.02931568]
+Target angles (top 3):  [100.92336434 111.10012611 100.10930591]
+Mean inconsistency: 0.22°
+Mean error: 0.18°
+
+Output angles (top 3):  [-83.30694987 -73.84274606 -84.68033699]
+Target angles (top 3):  [-82.80844421 -73.33699349 -84.19013194]
+Mean inconsistency: 0.01°
+Mean error: 0.50°
+
+Output angles (top 3):  [-87.00163142 -86.98754074 -86.08034135]
+Target angles (top 3):  [-90.03911429 -90.02244122 -89.12352774]
+Mean inconsistency: 0.01°
+Mean error: 3.04°
+
+Output angles (top 3):  [-85.85140707 -85.31781221 -87.43134594]
+Target angles (top 3):  [-85.12044351 -84.58260803 -86.68742578]
+Mean inconsistency: 0.01°
+Mean error: 0.73°
+
+Output angles (top 3):  [93.69732734 97.09673981 94.48598879]
+Target angles (top 3):  [ 97.35612911 100.78637014  97.97417869]
+Mean inconsistency: 0.13°
+Mean error: 3.67°
+
+Output angles (top 3):  [-79.27558098 -77.39741556 -67.1188278 ]
+Target angles (top 3):  [-79.2979891  -77.42006263 -67.13787663]
+Mean inconsistency: 0.00°
+Mean error: 0.02°
+
+Output angles (top 3):  [114.0942871  114.68324749 120.03735081]
+Target angles (top 3):  [101.80268267 102.82988141 107.11165231]
+Mean inconsistency: 0.71°
+Mean error: 12.07°
+
+Output angles (top 3):  [104.3643138  113.74528493 109.89388469]
+Target angles (top 3):  [ 99.68210858 109.09998774 105.43798529]
+Mean inconsistency: 0.15°
+Mean error: 4.66°
+
+Output angles (top 3):  [ 98.35404786 108.23316517  99.90745144]
+Target angles (top 3):  [ 97.47072067 107.2148993   97.86010279]
+Mean inconsistency: 0.78°
+Mean error: 0.95°
+
+Output angles (top 3):  [ 97.73131902  98.36463465 108.62728075]
+Target angles (top 3):  [100.23988299 100.77645797 110.57604161]
+Mean inconsistency: 0.37°
+Mean error: 2.46°
+
+Output angles (top 3):  [103.91372622 118.67030211 115.61782227]
+Target angles (top 3):  [100.79490721 115.50112953 112.38578611]
+Mean inconsistency: 0.08°
+Mean error: 3.14°
+
+Output angles (top 3):  [ 96.66257883 104.86951557  97.83946824]
+Target angles (top 3):  [ 98.20783087 106.45481349  98.9229395 ]
+Mean inconsistency: 0.33°
+Mean error: 1.57°
+
+Output angles (top 3):  [-88.07651878 -88.10926954 -87.79882378]
+Target angles (top 3):  [-90.47215579 -90.52079991 -90.23661285]
+Mean inconsistency: 0.03°
+Mean error: 2.40°
+
+Output angles (top 3):  [102.42358385 135.08297348 102.49803291]
+Target angles (top 3):  [100.93425054 133.54901359 100.83461318]
+Mean inconsistency: 0.12°
+Mean error: 1.51°
+
+Output angles (top 3):  [100.17296822  93.40051464 112.95935555]
+Target angles (top 3):  [131.66220628 135.14487294 133.32607572]
+Mean inconsistency: 14.25°
+
+Output angles (top 3):  [92.77276561 94.3512838  94.07421034]
+Target angles (top 3):  [93.06983185 94.64718466 94.38087387]
+Mean inconsistency: 0.01°
+Mean error: 0.30°
+
+Output angles (top 3):  [95.4829915  96.23236571 96.31395232]
+Target angles (top 3):  [96.60744516 97.34902444 97.44677104]
+Mean inconsistency: 0.01°
+Mean error: 1.12°
+
+Output angles (top 3):  [89.55991976 94.48304498 94.57670736]
+Target angles (top 3):  [ 95.3620068  100.292767   100.36862661]
+Mean inconsistency: 0.01°
+Mean error: 5.81°
+
+Output angles (top 3):  [ 92.04054201 109.96418783  91.63711689]
+Target angles (top 3):  [ 90.78235515 108.69845892  90.35618914]
+Mean inconsistency: 0.02°
+Mean error: 1.26°
+
+Output angles (top 3):  [-97.45526327 -97.31487556 -98.6113889 ]
+Target angles (top 3):  [ -98.91170953  -98.77001706 -100.0592294 ]
+Mean inconsistency: 0.01°
+Mean error: 1.46°
+
+Output angles (top 3):  [-60.8275269  -56.76681551 -61.28292976]
+Target angles (top 3):  [-49.20504249 -45.11572811 -49.86233967]
+Mean inconsistency: 0.15°
+Mean error: 11.64°
+
+Output angles (top 3):  [-68.3427294  -62.17275998 -56.79388355]
+Target angles (top 3):  [-68.83400359 -62.67241546 -57.27572599]
+Mean inconsistency: 0.01°
+Mean error: 0.50°
+
+Output angles (top 3):  [-73.56617121 -72.27850297 -66.04857814]
+Target angles (top 3):  [-73.06392181 -71.77293331 -65.52780793]
+Mean inconsistency: 0.01°
+Mean error: 0.50°
+
+Output angles (top 3):  [-82.82783259 -82.70960885 -80.9048543 ]
+Target angles (top 3):  [-80.72763339 -80.614818   -78.79688021]
+Mean inconsistency: 0.01°
+Mean error: 2.10°
+
+Output angles (top 3):  [-89.03719172 -88.62454584 -90.2124692 ]
+Target angles (top 3):  [-93.33637181 -92.92516    -94.50772673]
+Mean inconsistency: 0.00°
+Mean error: 4.30°
+
+Output angles (top 3):  [-79.55184847 -62.75632451 -79.76787369]
+Target angles (top 3):  [-81.95496628 -65.15395297 -82.14971464]
+Mean inconsistency: 0.01°
+Mean error: 2.40°
+
+Output angles (top 3):  [-75.55788169 -59.81417271 -60.53865088]
+Target angles (top 3):  [-72.97671763 -57.22748294 -57.94207591]
+Mean inconsistency: 0.01°
+Mean error: 2.58°
+
+Output angles (top 3):  [-88.02520357 -87.34557243 -86.18161257]
+Target angles (top 3):  [-84.77626776 -84.09502094 -82.93478141]
+Mean inconsistency: 0.00°
+Mean error: 3.25°
+
+Output angles (top 3):  [-89.14857844 -74.08564808 -88.53385459]
+Target angles (top 3):  [-90.12110455 -75.05919004 -89.50288309]
+Mean inconsistency: 0.00°
+Mean error: 0.97°
+
+Output angles (top 3):  [-91.69911451 -91.09325624 -87.85121133]
+Target angles (top 3):  [-94.72779982 -94.11462039 -90.85500619]
+Mean inconsistency: 0.02°
+Mean error: 3.03°
+
+Output angles (top 3):  [-90.03754122 -89.97415707 -91.68335727]
+Target angles (top 3):  [-92.38961635 -92.33747719 -94.01635812]
+Mean inconsistency: 0.02°
+Mean error: 2.36°
+
+Output angles (top 3):  [-64.03093343 -61.82374414 -61.22050866]
+Target angles (top 3):  [-66.08563964 -63.88645573 -63.24858182]
+Mean inconsistency: 0.02°
+Mean error: 2.06°
+
+Output angles (top 3):  [-61.51878985 -60.20483221 -60.94675468]
+Target angles (top 3):  [-60.15793288 -58.84700545 -59.51473046]
+Mean inconsistency: 0.05°
+Mean error: 1.36°
+
+Output angles (top 3):  [-84.80672281 -60.59065594 -84.32294734]
+Target angles (top 3):  [-83.95086476 -59.72844372 -83.45336551]
+Mean inconsistency: 0.01°
+Mean error: 0.86°
+
+Output angles (top 3):  [-74.73865514 -72.47319751 -70.28712033]
+Target angles (top 3):  [-73.5595876  -71.30219118 -69.15451618]
+Mean inconsistency: 0.03°
+Mean error: 1.18°
+
+Output angles (top 3):  [-86.75892748 -82.44293777 -85.96234984]
+Target angles (top 3):  [-80.27316327 -75.97374527 -79.61787144]
+Mean inconsistency: 0.09°
+Mean error: 6.48°
+
+Output angles (top 3):  [-87.85617005 -84.76408194 -86.89971817]
+Target angles (top 3):  [-87.57562496 -84.47947562 -86.60360206]
+Mean inconsistency: 0.01°
+Mean error: 0.28°
+
+Output angles (top 3):  [-91.81024852 -90.69642908 -90.68336293]
+Target angles (top 3):  [-90.93350141 -89.81829636 -89.80254002]
+Mean inconsistency: 0.00°
+Mean error: 0.88°
+
+Output angles (top 3):  [-82.82060625 -59.60034681 -83.70717164]
+Target angles (top 3):  [-80.35566919 -57.0461991  -80.99738192]
+Mean inconsistency: 0.16°
+Mean error: 2.51°
+
+Output angles (top 3):  [-67.6792175  -64.30466009 -72.8761172 ]
+Target angles (top 3):  [-71.76812046 -68.29548056 -77.06958435]
+Mean inconsistency: 0.14°
+Mean error: 4.04°
+
+Output angles (top 3):  [-80.7351924  -70.6063019  -74.11116566]
+Target angles (top 3):  [-73.19805123 -63.04541099 -66.29729025]
+Mean inconsistency: 0.18°
+Mean error: 7.55°
+
+Output angles (top 3):  [-68.86189208 -63.38502293 -70.9053754 ]
+Target angles (top 3):  [-74.93600411 -69.48264911 -77.05130699]
+Mean inconsistency: 0.05°
+Mean error: 6.09°
+
+Output angles (top 3):  [-84.02700208 -80.16460523 -81.12566066]
+Target angles (top 3):  [-69.52126647 -65.3476127  -67.61423374]
+Mean inconsistency: 0.87°
+Mean error: 14.66°
+
+Output angles (top 3):  [-74.38340334 -68.48033039 -76.98801402]
+Target angles (top 3):  [-67.97852031 -62.01534746 -70.05698201]
+Mean inconsistency: 0.35°
+Mean error: 6.43°
+
+Output angles (top 3):  [-67.46074707 -64.98670912 -60.94497883]
+Target angles (top 3):  [-64.33932158 -61.86620655 -57.68052067]
+Mean inconsistency: 0.10°
+Mean error: 3.12°
+
+Output angles (top 3):  [-79.18359199 -76.92896704 -83.6246971 ]
+Target angles (top 3):  [-73.91734245 -71.63393374 -78.44422469]
+Mean inconsistency: 0.08°
+Mean error: 5.28°
+
+Output angles (top 3):  [-72.11252937 -72.34677754 -81.2353535 ]
+Target angles (top 3):  [-59.74328333 -59.14471432 -58.4756142 ]
+Mean inconsistency: 6.93°
+
+Output angles (top 3):  [-64.75912722 -62.55839246 -68.04790429]
+Target angles (top 3):  [-65.95265614 -63.7009893  -68.81847644]
+Mean inconsistency: 0.28°
+Mean error: 1.17°
+
+Output angles (top 3):  [-66.12164751 -59.75806954 -51.65773839]
+Target angles (top 3):  [-67.09192542 -61.84878863 -56.08065062]
+Mean inconsistency: 2.30°
+
+Output angles (top 3):  [-86.38957817 -85.61126445 -74.78865213]
+Target angles (top 3):  [-79.13332103 -78.83652889 -66.22658726]
+Mean inconsistency: 1.19°
+
+Output angles (top 3):  [115.71089043 120.22231234 109.63872931]
+Target angles (top 3):  [-51.84930001 -49.30548199 -54.11059254]
+Mean inconsistency: 3.85°
+
+Output angles (top 3):  [-86.22365238 -84.97485475 -84.80680477]
+Target angles (top 3):  [-72.62497884 -71.38641598 -71.03507826]
+Mean inconsistency: 0.12°
+Mean error: 13.59°
+
+Output angles (top 3):  [-88.5212324  -86.69934774 -86.58418392]
+Target angles (top 3):  [-71.2462705  -69.0375755  -68.35082828]
+Mean inconsistency: 0.64°
+Mean error: 17.47°
+
+Output angles (top 3):  [-93.46047004 -84.50939102 -80.67113889]
+Target angles (top 3):  [-86.3219933  -77.38688837 -73.57849521]
+Mean inconsistency: 0.03°
+Mean error: 7.13°
+
+Output angles (top 3):  [-73.74361953 -71.96961449 -69.1609724 ]
+Target angles (top 3):  [-60.08224516 -58.87038213 -57.56575723]
+Mean inconsistency: 1.38°
+
+Output angles (top 3):  [-81.33654958 -80.86896849 -80.59888232]
+Target angles (top 3):  [-81.7238924  -81.27171411 -81.01840947]
+Mean inconsistency: 0.02°
+Mean error: 0.40°
+
+Output angles (top 3):  [-87.29104703 -82.55572469 -82.00918661]
+Target angles (top 3):  [-81.5203778  -76.7770321  -76.28801262]
+Mean inconsistency: 0.04°
+Mean error: 5.77°
+
+Output angles (top 3):  [-78.1266612  -57.39418888 -79.55805028]
+Target angles (top 3):  [-75.56975273 -54.81131992 -77.05766682]
+Mean inconsistency: 0.05°
+Mean error: 2.57°
+
+Output angles (top 3):  [-83.99118456 -82.07403926 -84.17845469]
+Target angles (top 3):  [-84.32305815 -82.40513922 -84.50623275]
+Mean inconsistency: 0.00°
+Mean error: 0.33°
+
+Output angles (top 3):  [-70.29553513 -68.30979423 -68.54544942]
+Target angles (top 3):  [-64.57893253 -62.62377135 -63.59619532]
+Mean inconsistency: 0.51°
+Mean error: 5.70°
+
+Output angles (top 3):  [114.50845611 119.68785003 101.99460699]
+Target angles (top 3):  [-51.06073819 -49.57792342 -53.58547672]
+Mean inconsistency: 9.12°
+
+Output angles (top 3):  [-76.38175277 -74.22983337 -70.69187051]
+Target angles (top 3):  [-70.65669693 -68.52724199 -65.01438045]
+Mean inconsistency: 0.03°
+Mean error: 5.71°
+
+Output angles (top 3):  [-80.18717901 -79.84163291 -81.35321524]
+Target angles (top 3):  [-78.95335499 -78.61943518 -80.10276562]
+Mean inconsistency: 0.02°
+Mean error: 1.23°
+
+Output angles (top 3):  [-83.60590725 -83.08108235 -83.19666964]
+Target angles (top 3):  [-84.83488134 -84.3250062  -84.4077986 ]
+Mean inconsistency: 0.02°
+Mean error: 1.24°
+
+Output angles (top 3):  [-122.05389586 -113.93846317 -120.60272655]
+Target angles (top 3):  [-60.8798597  -52.42804468 -56.63773749]
+Mean inconsistency: 1.86°
+
+Output angles (top 3):  [-83.85973757 -70.28048139 -80.19040969]
+Target angles (top 3):  [-76.79891908 -63.43422015 -73.60221566]
+Mean inconsistency: 0.32°
+Mean error: 6.95°
+
+Output angles (top 3):  [-28.94384868  -7.92190782 -30.02652587]
+Target angles (top 3):  [-72.54917653 -50.90242996 -72.1910779 ]
+Mean inconsistency: 0.96°
+Mean error: 43.29°
+
+Output angles (top 3):  [-55.40174757 -54.43003021 -58.94440276]
+Target angles (top 3):  [-61.40371502 -60.51500018 -62.24636405]
+Mean inconsistency: 1.86°
+
+Output angles (top 3):  [-84.00078781 -83.11437952 -82.29666244]
+Target angles (top 3):  [-77.39639947 -76.73428945 -76.38146204]
+Mean inconsistency: 0.46°
+Mean error: 6.49°
+
+Output angles (top 3):  [-65.31852654 -63.07355265 -64.06968792]
+Target angles (top 3):  [-67.40183829 -65.11166868 -66.32221391]
+Mean inconsistency: 0.14°
+Mean error: 2.06°
+
+Output angles (top 3):  [-67.13037765 -65.2477248  -84.32778995]
+Target angles (top 3):  [-60.85768624 -58.8788619  -77.77306193]
+Mean inconsistency: 0.19°
+Mean error: 6.32°
+
+Output angles (top 3):  [-15.06906388 -12.00061164 -17.04147907]
+Target angles (top 3):  [-62.84246934 -60.64574915 -59.42746899]
+Mean inconsistency: 4.17°
+
+Output angles (top 3):  [-63.12184208 -63.05049393 -25.00478297]
+Target angles (top 3):  [-55.9384425  -53.83270801 -59.62645723]
+Mean inconsistency: 29.23°
+
+Output angles (top 3):  [-62.62718612 -61.03685854 -63.006528  ]
+Target angles (top 3):  [-54.22730404 -52.35877408 -55.94119269]
+Mean inconsistency: 1.08°
+
+Output angles (top 3):  [-72.69943387 -71.55517227 -72.28674018]
+Target angles (top 3):  [-71.73105009 -70.60730797 -71.12669421]
+Mean inconsistency: 0.14°
+Mean error: 0.96°
+
+Output angles (top 3):  [-58.53263798 -57.41162635 -62.03800034]
+Target angles (top 3):  [-62.21250224 -61.03507397 -65.17773072]
+Mean inconsistency: 0.36°
+Mean error: 3.65°
+
+Output angles (top 3):  [-78.30574876 -65.52519441 -77.06380863]
+Target angles (top 3):  [-80.42975263 -67.59223216 -78.91932129]
+Mean inconsistency: 0.18°
+Mean error: 2.10°
+
+Output angles (top 3):  [-29.84629084 -24.97201855 -16.6568882 ]
+Target angles (top 3):  [-61.31788594 -57.71380952 -54.6676794 ]
+Mean inconsistency: 4.36°
+
+Output angles (top 3):  [-89.06294153 -78.90196963 -93.37113116]
+Target angles (top 3):  [-61.25354278 -51.41849304 -67.10619206]
+Mean inconsistency: 1.03°
+
+Output angles (top 3):  [-69.89260861 -62.95349841 -72.96172679]
+Target angles (top 3):  [-69.03184592 -62.01374318 -71.77224576]
+Mean inconsistency: 0.22°
+Mean error: 0.90°
+
+Output angles (top 3):  [-67.30920567 -63.13169122 -74.10974499]
+Target angles (top 3):  [-71.71821584 -67.47689576 -78.34813967]
+Mean inconsistency: 0.11°
+Mean error: 4.38°
+
+Output angles (top 3):  [-66.9101382  -60.72557267 -59.9451211 ]
+Target angles (top 3):  [-69.20230086 -63.18796289 -63.98305642]
+Mean inconsistency: 1.16°
+
+Output angles (top 3):  [-62.94638818 -61.7192081  -63.95078799]
+Target angles (top 3):  [-66.41342879 -64.74955936 -67.89257664]
+Mean inconsistency: 0.61°
+Mean error: 3.25°
+
+Output angles (top 3):  [-65.22966578 -62.76669274 -61.24769965]
+Target angles (top 3):  [-62.29151312 -59.81679381 -56.85855542]
+Mean inconsistency: 0.97°
+Mean error: 2.94°
+
+Output angles (top 3):  [-83.68279469 -83.05594725 -84.17897378]
+Target angles (top 3):  [-79.95419766 -79.27799287 -80.51311799]
+Mean inconsistency: 0.07°
+Mean error: 3.75°
+
+Output angles (top 3):  [-60.15139281 -61.10290647 -65.60958139]
+Target angles (top 3):  [-75.45052021 -74.01531823 -76.09738956]
+Mean inconsistency: 3.21°
+
+Output angles (top 3):  [-60.58252801 -56.21670525 -62.07911808]
+Target angles (top 3):  [-65.13957173 -60.79804133 -66.89906782]
+Mean inconsistency: 0.18°
+Mean error: 4.57°
+
+Output angles (top 3):  [-86.18680351 -76.64235181 -86.15572615]
+Target angles (top 3):  [-82.9390213  -73.43582871 -82.67483046]
+Mean inconsistency: 0.18°
+Mean error: 3.23°
+
+Output angles (top 3):  [-29.71747006 -21.73191   ]
+Target angles (top 3):  [-49.97641557 -45.44409023]
+
+Output angles (top 3):  [-81.3987726  -79.60606651 -76.14473838]
+Target angles (top 3):  [-75.40474088 -73.93086425 -72.20253706]
+Mean inconsistency: 1.37°
+
+Output angles (top 3):  [-82.83283912 -80.62539028 -81.06133394]
+Target angles (top 3):  [-82.95832997 -80.73720179 -81.11088486]
+Mean inconsistency: 0.05°
+Mean error: 0.12°
+
+Output angles (top 3):  [  4.4936028  -72.28315433]
+Target angles (top 3):  [-49.71686569 -47.05100766]
+
+Output angles (top 3):  [-65.32737847 -64.99691342 -69.00811277]
+Target angles (top 3):  [-71.19458971 -70.20469052 -72.09860252]
+Mean inconsistency: 1.85°
+
+Output angles (top 3):  [-62.93452414 -61.88506558 -56.98890594]
+Target angles (top 3):  [-61.47292832 -59.90273748 -54.23509627]
+Mean inconsistency: 0.86°
+Mean error: 1.72°
+
+Output angles (top 3):  [-77.5093487  -66.80347797 -75.9252161 ]
+Target angles (top 3):  [-77.16154407 -66.41125155 -75.46633384]
+Mean inconsistency: 0.07°
+Mean error: 0.37°
+
+Output angles (top 3):  [-66.59104543 -64.56226068 -66.80976857]
+Target angles (top 3):  [-70.84267903 -68.75860235 -71.7499004 ]
+Mean inconsistency: 0.50°
+Mean error: 4.22°
+
+Output angles (top 3):  [-89.60794965 -79.54807821 -67.8383814 ]
+Target angles (top 3):  [-84.95737972 -74.91153881 -63.26307765]
+Mean inconsistency: 0.05°
+Mean error: 4.64°
+
+Output angles (top 3):  [-69.54488368 -65.65522755 -64.87384025]
+Target angles (top 3):  [-71.30133174 -66.27248118 -69.13623883]
+Mean inconsistency: 2.43°
+
+Output angles (top 3):  [-66.6718329  -62.506524   -58.43685141]
+Target angles (top 3):  [-62.65442459 -59.87557928 -61.32367281]
+Mean inconsistency: 4.60°
+
+Output angles (top 3):  [-83.36672769 -83.06266133 -80.5233336 ]
+Target angles (top 3):  [-81.18038464 -80.83047931 -78.19859768]
+Mean inconsistency: 0.09°
+Mean error: 2.21°
+
+Output angles (top 3):  [-59.83659622 -55.50047795 -79.67246961]
+Target angles (top 3):  [-57.80221691 -53.58261193 -77.06843843]
+Mean inconsistency: 0.46°
+Mean error: 1.98°
+
+Output angles (top 3):  [-62.16801983 -52.42907848 -64.46132414]
+Target angles (top 3):  [-58.29352822 -48.75578628 -62.66416487]
+Mean inconsistency: 1.38°
+
+Output angles (top 3):  [-83.35635946 -81.06774066 -83.74125428]
+Target angles (top 3):  [-80.62885547 -78.35816643 -80.96959347]
+Mean inconsistency: 0.04°
+Mean error: 2.72°
+
+Output angles (top 3):  [-58.23029283 -39.88133113 -55.05302543]
+Target angles (top 3):  [-68.25044608 -49.60256061 -63.9493665 ]
+Mean inconsistency: 0.75°
+Mean error: 9.87°
+
+Output angles (top 3):  [-74.52954207 -86.78288778  30.10131303]
+Target angles (top 3):  [-51.05243031 -48.89730686 -46.53952823]
+Mean inconsistency: 76.35°
+
+Output angles (top 3):  [-68.12425897 -65.60114611 -67.17920668]
+Target angles (top 3):  [-66.69085496 -64.30408467 -65.54482478]
+Mean inconsistency: 0.22°
+Mean error: 1.37°
+
+Output angles (top 3):  [-63.71274907 -47.46842137 -70.94210815]
+Target angles (top 3):  [-59.69194631 -43.87292536 -63.09944091]
+Mean inconsistency: 2.83°
+
+Output angles (top 3):  [-80.40478883 -79.71479629 -79.11539938]
+Target angles (top 3):  [-76.21753881 -75.56866411 -74.85212309]
+Mean inconsistency: 0.08°
+Mean error: 4.17°
+
+Output angles (top 3):  [-77.27673295 -62.03440766 -61.24496757]
+Target angles (top 3):  [-73.87219337 -58.8178419  -57.36934729]
+Mean inconsistency: 0.44°
+Mean error: 3.31°
+
+Output angles (top 3):  [-89.41383567 -86.02235988 -86.58826837]
+Target angles (top 3):  [-82.46890943 -79.07848897 -79.64949871]
+Mean inconsistency: 0.00°
+Mean error: 6.94°
+
+Output angles (top 3):  [-83.06915001 -82.14379598 -81.04729107]
+Target angles (top 3):  [-84.61543851 -83.6721208  -82.55078509]
+Mean inconsistency: 0.03°
+Mean error: 1.54°
+
+Output angles (top 3):  [-71.31052173 -64.6940765  -68.12518788]
+Target angles (top 3):  [-67.32133772 -60.68001203 -63.54090489]
+Mean inconsistency: 0.40°
+Mean error: 4.00°
+
+Output angles (top 3):  [12.94153081 16.024802   16.28912349]
+Target angles (top 3):  [-60.48767009 -59.52469993 -61.39890217]
+Mean inconsistency: 2.84°
+
+Output angles (top 3):  [-67.73111328 -62.39389418 -61.76942365]
+Target angles (top 3):  [-64.743486   -59.47502449 -58.62274977]
+Mean inconsistency: 0.15°
+Mean error: 2.95°
+
+Output angles (top 3):  [-66.28259408 -63.58491525 -64.80098262]
+Target angles (top 3):  [-76.53346774 -74.07198375 -75.72943606]
+Mean inconsistency: 0.45°
+Mean error: 10.37°
+
+Output angles (top 3):  [-64.5560452  -61.99061932 -68.8668508 ]
+Target angles (top 3):  [-65.99591445 -63.4375433  -70.51895788]
+Mean inconsistency: 0.14°
+Mean error: 1.44°
+
+Output angles (top 3):  [-84.28818851 -84.11461291 -84.62214378]
+Target angles (top 3):  [-77.87103771 -77.3377286  -76.79995041]
+Mean inconsistency: 0.94°
+Mean error: 6.60°
+
+Output angles (top 3):  [-70.34151596]
+Target angles (top 3):  [-67.69055172]
+
+Train size: 21161
+Val size: 5411
+
+--------------------------
+|       Evaluation       |
+--------------------------
+
+Val error (mean): 23.578°
+Val error (median): 4.189°
+Val loss: 2.044
+Val time: 0 min 27 s
+
+--------------------------
+|        Training        |
+--------------------------
+
+Epoch 1/30
+----------
+Train loss: 0.871
+Train time: 4 min 28 s
+
+Val error (mean): 19.183°
+Val error (median): 3.526°
+Val loss: 1.623
+Val time: 0 min 23 s
+
+Epoch 2/30
+----------
+Train loss: 0.513
+Train time: 4 min 29 s
+
+Val error (mean): 20.473°
+Val error (median): 4.611°
+Val loss: 1.718
+Val time: 0 min 23 s
+
+Epoch 3/30
+----------
+Train loss: 0.411
+Train time: 4 min 29 s
+
+Val error (mean): 24.462°
+Val error (median): 3.836°
+Val loss: 2.145
+Val time: 0 min 23 s
+
+Epoch 4/30
+----------
+Train loss: 0.384
+Train time: 4 min 29 s
+
+Val error (mean): 18.128°
+Val error (median): 3.144°
+Val loss: 1.535
+Val time: 0 min 23 s
+
+Epoch 5/30
+----------
+Train loss: 0.263
+Train time: 4 min 29 s
+
+Val error (mean): 17.985°
+Val error (median): 3.823°
+Val loss: 1.495
+Val time: 0 min 23 s
+
+Epoch 6/30
+----------
+Train loss: 0.266
+Train time: 4 min 29 s
+
+Val error (mean): 18.547°
+Val error (median): 3.848°
+Val loss: 1.552
+Val time: 0 min 23 s
+
+Epoch 7/30
+----------
+Train loss: 0.217
+Train time: 4 min 29 s
+
+Val error (mean): 17.704°
+Val error (median): 3.548°
+Val loss: 1.480
+Val time: 0 min 23 s
+
+Epoch 8/30
+----------
+Train loss: 0.183
+Train time: 4 min 29 s
+
+Val error (mean): 17.554°
+Val error (median): 3.422°
+Val loss: 1.470
+Val time: 0 min 23 s
+
+Epoch 9/30
+----------
+Train loss: 0.176
+Train time: 4 min 29 s
+
+Val error (mean): 19.178°
+Val error (median): 4.156°
+Val loss: 1.602
+Val time: 0 min 23 s
+
+Epoch 10/30
+-----------
+Train loss: 0.169
+Train time: 4 min 29 s
+
+Val error (mean): 19.258°
+Val error (median): 4.372°
+Val loss: 1.605
+Val time: 0 min 23 s
+
+Epoch 11/30
+-----------
+Train loss: 0.136
+Train time: 4 min 29 s
+
+Val error (mean): 17.524°
+Val error (median): 3.282°
+Val loss: 1.468
+Val time: 0 min 23 s
+
+Epoch 12/30
+-----------
+Train loss: 0.123
+Train time: 4 min 29 s
+
+Val error (mean): 18.999°
+Val error (median): 3.598°
+Val loss: 1.606
+Val time: 0 min 23 s
+
+Epoch 13/30
+-----------
+Train loss: 0.114
+Train time: 4 min 29 s
+
+Val error (mean): 17.650°
+Val error (median): 3.208°
+Val loss: 1.484
+Val time: 0 min 23 s
+
+Epoch 14/30
+-----------
+Train loss: 0.111
+Train time: 4 min 29 s
+
+Val error (mean): 18.639°
+Val error (median): 3.196°
+Val loss: 1.585
+Val time: 0 min 23 s
+
+Epoch 15/30
+-----------
+Train loss: 0.098
+Train time: 4 min 29 s
+
+Val error (mean): 19.239°
+Val error (median): 3.381°
+Val loss: 1.637
+Val time: 0 min 23 s
+
+Epoch 16/30
+-----------
+Train loss: 0.097
+Train time: 4 min 29 s
+
+Val error (mean): 18.103°
+Val error (median): 3.100°
+Val loss: 1.533
+Val time: 0 min 23 s
+
+Epoch 17/30
+-----------
+Train loss: 0.086
+Train time: 4 min 29 s
+
+Val error (mean): 17.223°
+Val error (median): 3.257°
+Val loss: 1.440
+Val time: 0 min 23 s
+
+Epoch 18/30
+-----------
+Train loss: 0.084
+Train time: 4 min 29 s
+
+Val error (mean): 18.050°
+Val error (median): 3.334°
+Val loss: 1.520
+Val time: 0 min 23 s
+
+Epoch 19/30
+-----------
+Train loss: 0.072
+Train time: 4 min 29 s
+
+Val error (mean): 16.729°
+Val error (median): 3.204°
+Val loss: 1.392
+Val time: 0 min 23 s
+
+Epoch 20/30
+-----------
+Train loss: 0.073
+Train time: 4 min 29 s
+
+Val error (mean): 17.927°
+Val error (median): 3.372°
+Val loss: 1.506
+Val time: 0 min 23 s
+
+Epoch 21/30
+-----------
+Train loss: 0.051
+Train time: 4 min 29 s
+
+Val error (mean): 17.109°
+Val error (median): 3.090°
+Val loss: 1.435
+Val time: 0 min 23 s
+
+Epoch 22/30
+-----------
+Train loss: 0.053
+Train time: 4 min 29 s
+
+Val error (mean): 17.348°
+Val error (median): 2.997°
+Val loss: 1.462
+Val time: 0 min 23 s
+
+Epoch 23/30
+-----------
+Train loss: 0.049
+Train time: 4 min 29 s
+
+Val error (mean): 17.167°
+Val error (median): 3.123°
+Val loss: 1.441
+Val time: 0 min 23 s
+
+Epoch 24/30
+-----------
+Train loss: 0.046
+Train time: 4 min 29 s
+
+Val error (mean): 17.120°
+Val error (median): 3.132°
+Val loss: 1.436
+Val time: 0 min 23 s
+
+Epoch 25/30
+-----------
+Train loss: 0.047
+Train time: 4 min 29 s
+
+Val error (mean): 16.746°
+Val error (median): 3.129°
+Val loss: 1.399
+Val time: 0 min 23 s
+
+Epoch 26/30
+-----------
+Train loss: 0.043
+Train time: 4 min 29 s
+
+Val error (mean): 17.007°
+Val error (median): 3.123°
+Val loss: 1.424
+Val time: 0 min 23 s
+
+Epoch 27/30
+-----------
+Train loss: 0.044
+Train time: 4 min 29 s
+
+Val error (mean): 16.883°
+Val error (median): 3.105°
+Val loss: 1.413
+Val time: 0 min 23 s
+
+Epoch 28/30
+-----------
+Train loss: 0.040
+Train time: 4 min 28 s
+
+Val error (mean): 16.801°
+Val error (median): 3.130°
+Val loss: 1.404
+Val time: 0 min 23 s
+
+Epoch 29/30
+-----------
+Train loss: 0.040
+Train time: 4 min 29 s
+
+Val error (mean): 17.026°
+Val error (median): 3.199°
+Val loss: 1.424
+Val time: 0 min 23 s
+
+Epoch 30/30
+-----------
+Train loss: 0.038
+Train time: 4 min 29 s
+
+Val error (mean): 17.197°
+Val error (median): 3.097°
+Val loss: 1.443
+Val time: 0 min 23 s
+

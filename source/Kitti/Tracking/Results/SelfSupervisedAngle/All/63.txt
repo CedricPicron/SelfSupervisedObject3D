@@ -1,0 +1,555 @@
+
+*******************************
+*       Angle estimator       *
+*******************************
+
+--------------------------
+|    Hyper-parameters    |
+--------------------------
+
+Batch size:        32
+Camera number:     2
+Huber Quad. size:  20.0
+Label number:      7
+Learning rate:     2e-05
+Load model path:   /esat/ruchba/cpicron/ObjectDetector3D/NuScenes/Models/AngleEstimator/All/1.pt
+Milestones:        [7]
+Min bb. size:      0.0
+Optimizer:         SGD
+Optim. momentum:   0.9
+Prune threshold:   1.0
+Remove threshold:  1.0
+Representation:    Single
+Resume:            False
+Scheduler:         MultiStepLR
+Split:             All
+Split percentage:  0.8
+Step LR gamma:     0.1
+Training cycles:   5
+Training epochs:   10
+Weight decay:      0.0001
+Workers:           8
+
+--------------------------
+|     Initialization     |
+--------------------------
+
+Loading angle model ...
+Model loaded.
+
+Train size: 17582
+Val size: 5411
+
+--------------------------
+|       Evaluation       |
+--------------------------
+
+Val error (mean): 23.578°
+Val error (median): 4.189°
+Val loss: 2.044
+Val time: 0 min 35 s
+
+--------------------------
+|        Training        |
+--------------------------
+
+Cycle 1/5 | Epoch 1/10
+----------------------
+Train loss: 0.937
+Train time: 3 min 42 s
+
+Val error (mean): 17.019°
+Val error (median): 4.432°
+Val loss: 1.383
+Val time: 0 min 23 s
+
+Cycle 1/5 | Epoch 2/10
+----------------------
+Train loss: 0.619
+Train time: 3 min 43 s
+
+Val error (mean): 14.919°
+Val error (median): 3.864°
+Val loss: 1.188
+Val time: 0 min 23 s
+
+Cycle 1/5 | Epoch 3/10
+----------------------
+Train loss: 0.584
+Train time: 3 min 43 s
+
+Val error (mean): 17.906°
+Val error (median): 4.334°
+Val loss: 1.473
+Val time: 0 min 23 s
+
+Cycle 1/5 | Epoch 4/10
+----------------------
+Train loss: 0.500
+Train time: 3 min 43 s
+
+Val error (mean): 17.180°
+Val error (median): 4.182°
+Val loss: 1.405
+Val time: 0 min 23 s
+
+Cycle 1/5 | Epoch 5/10
+----------------------
+Train loss: 0.445
+Train time: 3 min 43 s
+
+Val error (mean): 20.891°
+Val error (median): 5.874°
+Val loss: 1.734
+Val time: 0 min 23 s
+
+Cycle 1/5 | Epoch 6/10
+----------------------
+Train loss: 0.410
+Train time: 3 min 42 s
+
+Val error (mean): 15.432°
+Val error (median): 4.584°
+Val loss: 1.219
+Val time: 0 min 23 s
+
+Cycle 1/5 | Epoch 7/10
+----------------------
+Train loss: 0.370
+Train time: 3 min 43 s
+
+Val error (mean): 15.838°
+Val error (median): 4.355°
+Val loss: 1.263
+Val time: 0 min 23 s
+
+Cycle 1/5 | Epoch 8/10
+----------------------
+Train loss: 0.316
+Train time: 3 min 42 s
+
+Val error (mean): 15.716°
+Val error (median): 4.414°
+Val loss: 1.252
+Val time: 0 min 23 s
+
+Cycle 1/5 | Epoch 9/10
+----------------------
+Train loss: 0.309
+Train time: 3 min 43 s
+
+Val error (mean): 15.592°
+Val error (median): 4.404°
+Val loss: 1.238
+Val time: 0 min 23 s
+
+Cycle 1/5 | Epoch 10/10
+-----------------------
+Train loss: 0.317
+Train time: 3 min 43 s
+
+Val error (mean): 16.123°
+Val error (median): 4.554°
+Val loss: 1.288
+Val time: 0 min 23 s
+
+Cycle 2/5 | Epoch 1/10
+----------------------
+Train loss: 0.403
+Train time: 3 min 46 s
+
+Val error (mean): 17.151°
+Val error (median): 4.551°
+Val loss: 1.391
+Val time: 0 min 23 s
+
+Cycle 2/5 | Epoch 2/10
+----------------------
+Train loss: 0.347
+Train time: 3 min 48 s
+
+Val error (mean): 16.956°
+Val error (median): 4.633°
+Val loss: 1.369
+Val time: 0 min 23 s
+
+Cycle 2/5 | Epoch 3/10
+----------------------
+Train loss: 0.330
+Train time: 3 min 48 s
+
+Val error (mean): 16.073°
+Val error (median): 4.464°
+Val loss: 1.284
+Val time: 0 min 23 s
+
+Cycle 2/5 | Epoch 4/10
+----------------------
+Train loss: 0.302
+Train time: 3 min 48 s
+
+Val error (mean): 16.769°
+Val error (median): 4.673°
+Val loss: 1.349
+Val time: 0 min 23 s
+
+Cycle 2/5 | Epoch 5/10
+----------------------
+Train loss: 0.295
+Train time: 3 min 48 s
+
+Val error (mean): 17.240°
+Val error (median): 4.510°
+Val loss: 1.399
+Val time: 0 min 23 s
+
+Cycle 2/5 | Epoch 6/10
+----------------------
+Train loss: 0.277
+Train time: 3 min 48 s
+
+Val error (mean): 16.938°
+Val error (median): 4.553°
+Val loss: 1.366
+Val time: 0 min 23 s
+
+Cycle 2/5 | Epoch 7/10
+----------------------
+Train loss: 0.270
+Train time: 3 min 48 s
+
+Val error (mean): 18.333°
+Val error (median): 5.068°
+Val loss: 1.500
+Val time: 0 min 23 s
+
+Cycle 2/5 | Epoch 8/10
+----------------------
+Train loss: 0.192
+Train time: 3 min 48 s
+
+Val error (mean): 16.848°
+Val error (median): 4.319°
+Val loss: 1.366
+Val time: 0 min 23 s
+
+Cycle 2/5 | Epoch 9/10
+----------------------
+Train loss: 0.186
+Train time: 3 min 48 s
+
+Val error (mean): 16.486°
+Val error (median): 4.433°
+Val loss: 1.330
+Val time: 0 min 23 s
+
+Cycle 2/5 | Epoch 10/10
+-----------------------
+Train loss: 0.180
+Train time: 3 min 48 s
+
+Val error (mean): 16.841°
+Val error (median): 4.577°
+Val loss: 1.360
+Val time: 0 min 23 s
+
+Cycle 3/5 | Epoch 1/10
+----------------------
+Train loss: 0.201
+Train time: 3 min 47 s
+
+Val error (mean): 17.223°
+Val error (median): 4.529°
+Val loss: 1.397
+Val time: 0 min 23 s
+
+Cycle 3/5 | Epoch 2/10
+----------------------
+Train loss: 0.199
+Train time: 3 min 49 s
+
+Val error (mean): 17.081°
+Val error (median): 4.943°
+Val loss: 1.377
+Val time: 0 min 23 s
+
+Cycle 3/5 | Epoch 3/10
+----------------------
+Train loss: 0.174
+Train time: 3 min 49 s
+
+Val error (mean): 18.118°
+Val error (median): 5.089°
+Val loss: 1.480
+Val time: 0 min 23 s
+
+Cycle 3/5 | Epoch 4/10
+----------------------
+Train loss: 0.177
+Train time: 3 min 49 s
+
+Val error (mean): 17.849°
+Val error (median): 4.495°
+Val loss: 1.459
+Val time: 0 min 23 s
+
+Cycle 3/5 | Epoch 5/10
+----------------------
+Train loss: 0.162
+Train time: 3 min 49 s
+
+Val error (mean): 16.949°
+Val error (median): 4.561°
+Val loss: 1.372
+Val time: 0 min 23 s
+
+Cycle 3/5 | Epoch 6/10
+----------------------
+Train loss: 0.145
+Train time: 3 min 49 s
+
+Val error (mean): 17.019°
+Val error (median): 4.757°
+Val loss: 1.371
+Val time: 0 min 23 s
+
+Cycle 3/5 | Epoch 7/10
+----------------------
+Train loss: 0.125
+Train time: 3 min 49 s
+
+Val error (mean): 18.022°
+Val error (median): 4.834°
+Val loss: 1.468
+Val time: 0 min 23 s
+
+Cycle 3/5 | Epoch 8/10
+----------------------
+Train loss: 0.098
+Train time: 3 min 49 s
+
+Val error (mean): 16.941°
+Val error (median): 4.708°
+Val loss: 1.365
+Val time: 0 min 23 s
+
+Cycle 3/5 | Epoch 9/10
+----------------------
+Train loss: 0.087
+Train time: 3 min 49 s
+
+Val error (mean): 16.388°
+Val error (median): 4.492°
+Val loss: 1.315
+Val time: 0 min 23 s
+
+Cycle 3/5 | Epoch 10/10
+-----------------------
+Train loss: 0.078
+Train time: 3 min 49 s
+
+Val error (mean): 16.597°
+Val error (median): 4.698°
+Val loss: 1.331
+Val time: 0 min 23 s
+
+Cycle 4/5 | Epoch 1/10
+----------------------
+Train loss: 0.130
+Train time: 3 min 48 s
+
+Val error (mean): 16.583°
+Val error (median): 4.679°
+Val loss: 1.333
+Val time: 0 min 23 s
+
+Cycle 4/5 | Epoch 2/10
+----------------------
+Train loss: 0.117
+Train time: 3 min 50 s
+
+Val error (mean): 16.172°
+Val error (median): 4.562°
+Val loss: 1.293
+Val time: 0 min 23 s
+
+Cycle 4/5 | Epoch 3/10
+----------------------
+Train loss: 0.088
+Train time: 3 min 50 s
+
+Val error (mean): 17.347°
+Val error (median): 5.042°
+Val loss: 1.401
+Val time: 0 min 23 s
+
+Cycle 4/5 | Epoch 4/10
+----------------------
+Train loss: 0.100
+Train time: 3 min 50 s
+
+Val error (mean): 17.530°
+Val error (median): 4.594°
+Val loss: 1.427
+Val time: 0 min 23 s
+
+Cycle 4/5 | Epoch 5/10
+----------------------
+Train loss: 0.090
+Train time: 3 min 50 s
+
+Val error (mean): 19.206°
+Val error (median): 4.899°
+Val loss: 1.585
+Val time: 0 min 23 s
+
+Cycle 4/5 | Epoch 6/10
+----------------------
+Train loss: 0.080
+Train time: 3 min 50 s
+
+Val error (mean): 16.973°
+Val error (median): 4.680°
+Val loss: 1.369
+Val time: 0 min 23 s
+
+Cycle 4/5 | Epoch 7/10
+----------------------
+Train loss: 0.077
+Train time: 3 min 50 s
+
+Val error (mean): 17.847°
+Val error (median): 4.851°
+Val loss: 1.453
+Val time: 0 min 23 s
+
+Cycle 4/5 | Epoch 8/10
+----------------------
+Train loss: 0.051
+Train time: 3 min 50 s
+
+Val error (mean): 16.808°
+Val error (median): 4.450°
+Val loss: 1.359
+Val time: 0 min 23 s
+
+Cycle 4/5 | Epoch 9/10
+----------------------
+Train loss: 0.046
+Train time: 3 min 50 s
+
+Val error (mean): 16.742°
+Val error (median): 4.457°
+Val loss: 1.351
+Val time: 0 min 23 s
+
+Cycle 4/5 | Epoch 10/10
+-----------------------
+Train loss: 0.041
+Train time: 3 min 50 s
+
+Val error (mean): 16.602°
+Val error (median): 4.467°
+Val loss: 1.338
+Val time: 0 min 23 s
+
+Cycle 5/5 | Epoch 1/10
+----------------------
+Train loss: 0.068
+Train time: 3 min 49 s
+
+Val error (mean): 17.259°
+Val error (median): 4.736°
+Val loss: 1.399
+Val time: 0 min 23 s
+
+Cycle 5/5 | Epoch 2/10
+----------------------
+Train loss: 0.067
+Train time: 3 min 51 s
+
+Val error (mean): 18.194°
+Val error (median): 4.868°
+Val loss: 1.486
+Val time: 0 min 23 s
+
+Cycle 5/5 | Epoch 3/10
+----------------------
+Train loss: 0.065
+Train time: 3 min 51 s
+
+Val error (mean): 16.772°
+Val error (median): 4.712°
+Val loss: 1.349
+Val time: 0 min 23 s
+
+Cycle 5/5 | Epoch 4/10
+----------------------
+Train loss: 0.063
+Train time: 3 min 51 s
+
+Val error (mean): 16.255°
+Val error (median): 4.529°
+Val loss: 1.303
+Val time: 0 min 23 s
+
+Cycle 5/5 | Epoch 5/10
+----------------------
+Train loss: 0.056
+Train time: 3 min 51 s
+
+Val error (mean): 16.756°
+Val error (median): 4.828°
+Val loss: 1.342
+Val time: 0 min 23 s
+
+Cycle 5/5 | Epoch 6/10
+----------------------
+Train loss: 0.042
+Train time: 3 min 51 s
+
+Val error (mean): 16.675°
+Val error (median): 4.845°
+Val loss: 1.338
+Val time: 0 min 23 s
+
+Cycle 5/5 | Epoch 7/10
+----------------------
+Train loss: 0.045
+Train time: 3 min 51 s
+
+Val error (mean): 16.200°
+Val error (median): 4.414°
+Val loss: 1.299
+Val time: 0 min 23 s
+
+Cycle 5/5 | Epoch 8/10
+----------------------
+Train loss: 0.030
+Train time: 3 min 51 s
+
+Val error (mean): 16.155°
+Val error (median): 4.450°
+Val loss: 1.293
+Val time: 0 min 23 s
+
+Cycle 5/5 | Epoch 9/10
+----------------------
+Train loss: 0.029
+Train time: 3 min 51 s
+
+Val error (mean): 15.945°
+Val error (median): 4.395°
+Val loss: 1.273
+Val time: 0 min 23 s
+
+Cycle 5/5 | Epoch 10/10
+-----------------------
+Train loss: 0.030
+Train time: 3 min 51 s
+
+Val error (mean): 15.952°
+Val error (median): 4.413°
+Val loss: 1.273
+Val time: 0 min 23 s
+

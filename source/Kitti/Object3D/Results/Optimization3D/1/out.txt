@@ -1,0 +1,7 @@
+Height error: 0.08 | 0.10
+Length error: 0.30 | 0.35
+Width error: 0.06 | 0.08
+X error: 0.62 | 1.24
+Y error: 0.17 | 0.26
+Z error: 2.89 | 4.36
+Ry error: 10.55 | 39.34

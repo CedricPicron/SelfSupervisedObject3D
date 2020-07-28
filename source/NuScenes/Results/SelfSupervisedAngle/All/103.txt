@@ -1,0 +1,156 @@
+
+*******************************
+*       Angle estimator       *
+*******************************
+
+--------------------------
+|    Hyper-parameters    |
+--------------------------
+
+Batch size:        32
+Camera number:     2
+Huber Quad. size:  20.0
+Label number:      8
+Learning rate:     2e-05
+Load model path:   /esat/ruchba/cpicron/ObjectDetector3D/Kitti/Tracking/Models/AngleEstimator/All/1.pt
+Milestones:        [7]
+Min bb. size:      0.0
+Optimizer:         SGD
+Optim. momentum:   0.9
+Prune threshold:   1.0
+Remove threshold:  1.0
+Representation:    Single
+Resume:            False
+Scheduler:         MultiStepLR
+Split:             All
+Split percentage:  0.8
+Step LR gamma:     0.1
+Training cycles:   1
+Training epochs:   10
+Version:           v1.0-trainval
+Weight decay:      0.0001
+Workers:           8
+
+--------------------------
+|     Initialization     |
+--------------------------
+
+Loading angle model ...
+Model loaded.
+
+Train size: 32506
+Val size: 26254
+
+--------------------------
+|       Evaluation       |
+--------------------------
+
+Val error (mean): 57.035°
+Val error (median): 25.122°
+Val loss: 5.261
+Val time: 3 min 53 s
+
+--------------------------
+|        Training        |
+--------------------------
+
+Epoch 1/10
+----------
+Train loss: 2.266
+Train time: 11 min 7 s
+
+Val error (mean): 46.194°
+Val error (median): 15.537°
+Val loss: 4.199
+Val time: 3 min 46 s
+
+Epoch 2/10
+----------
+Train loss: 1.779
+Train time: 11 min 15 s
+
+Val error (mean): 47.748°
+Val error (median): 17.110°
+Val loss: 4.322
+Val time: 3 min 39 s
+
+Epoch 3/10
+----------
+Train loss: 1.520
+Train time: 11 min 2 s
+
+Val error (mean): 48.083°
+Val error (median): 14.291°
+Val loss: 4.392
+Val time: 3 min 38 s
+
+Epoch 4/10
+----------
+Train loss: 1.407
+Train time: 11 min 10 s
+
+Val error (mean): 49.759°
+Val error (median): 17.786°
+Val loss: 4.549
+Val time: 3 min 39 s
+
+Epoch 5/10
+----------
+Train loss: 1.276
+Train time: 11 min 1 s
+
+Val error (mean): 46.501°
+Val error (median): 15.018°
+Val loss: 4.225
+Val time: 3 min 37 s
+
+Epoch 6/10
+----------
+Train loss: 1.175
+Train time: 11 min 15 s
+
+Val error (mean): 44.421°
+Val error (median): 12.922°
+Val loss: 4.031
+Val time: 3 min 37 s
+
+Epoch 7/10
+----------
+Train loss: 1.066
+Train time: 11 min 2 s
+
+Val error (mean): 46.619°
+Val error (median): 14.657°
+Val loss: 4.243
+Val time: 3 min 37 s
+
+Epoch 8/10
+----------
+Train loss: 0.807
+Train time: 11 min 10 s
+
+Val error (mean): 45.625°
+Val error (median): 12.572°
+Val loss: 4.158
+Val time: 3 min 37 s
+
+Epoch 9/10
+----------
+Train loss: 0.723
+Train time: 11 min 2 s
+
+Val error (mean): 44.725°
+Val error (median): 13.071°
+Val loss: 4.060
+Val time: 3 min 42 s
+
+Epoch 10/10
+-----------
+Train loss: 0.678
+Train time: 11 min 16 s
+
+Val error (mean): 45.199°
+Val error (median): 13.552°
+Val loss: 4.100
+Val time: 3 min 42 s
+

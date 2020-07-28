@@ -1,0 +1,156 @@
+
+*******************************
+*       Angle estimator       *
+*******************************
+
+--------------------------
+|    Hyper-parameters    |
+--------------------------
+
+Batch size:        32
+Camera number:     2
+Huber Quad. size:  20.0
+Label number:      6
+Learning rate:     2e-05
+Load model number: 3
+Load rendering:    all
+Milestones:        [7]
+Min bb. size:      0.0
+Optimizer:         SGD
+Optim. momentum:   0.9
+Prune threshold:   1.0
+Remove threshold:  1.0
+Representation:    Single
+Resume:            False
+Scheduler:         MultiStepLR
+Split:             All
+Split percentage:  0.8
+Step LR gamma:     0.1
+Training epochs:   10
+Version:           v1.0-trainval
+Weight decay:      0.0001
+Workers:           8
+
+--------------------------
+|     Initialization     |
+--------------------------
+
+Loading angle model ...
+Model loaded.
+
+Train size: 9973
+Val size: 26254
+
+--------------------------
+|       Evaluation       |
+--------------------------
+
+Val error (mean): 71.136°
+Val error (median): 41.155°
+Val loss: 6.656
+Val time: 2 min 53 s
+
+--------------------------
+|        Training        |
+--------------------------
+
+Epoch 1/10
+----------
+Train loss: 2.092
+Train time: 2 min 8 s
+
+Val error (mean): 65.037°
+Val error (median): 35.042°
+Val loss: 6.050
+Val time: 2 min 50 s
+
+Epoch 2/10
+----------
+Train loss: 1.538
+Train time: 2 min 8 s
+
+Val error (mean): 69.607°
+Val error (median): 30.714°
+Val loss: 6.489
+Val time: 2 min 50 s
+
+Epoch 3/10
+----------
+Train loss: 1.267
+Train time: 2 min 8 s
+
+Val error (mean): 63.831°
+Val error (median): 28.113°
+Val loss: 5.949
+Val time: 2 min 50 s
+
+Epoch 4/10
+----------
+Train loss: 1.106
+Train time: 2 min 8 s
+
+Val error (mean): 59.551°
+Val error (median): 27.071°
+Val loss: 5.520
+Val time: 2 min 50 s
+
+Epoch 5/10
+----------
+Train loss: 0.944
+Train time: 2 min 8 s
+
+Val error (mean): 64.475°
+Val error (median): 27.210°
+Val loss: 6.001
+Val time: 2 min 50 s
+
+Epoch 6/10
+----------
+Train loss: 0.853
+Train time: 2 min 8 s
+
+Val error (mean): 66.426°
+Val error (median): 27.696°
+Val loss: 6.177
+Val time: 2 min 50 s
+
+Epoch 7/10
+----------
+Train loss: 0.762
+Train time: 2 min 8 s
+
+Val error (mean): 69.013°
+Val error (median): 30.307°
+Val loss: 6.454
+Val time: 2 min 50 s
+
+Epoch 8/10
+----------
+Train loss: 0.514
+Train time: 2 min 8 s
+
+Val error (mean): 61.101°
+Val error (median): 24.721°
+Val loss: 5.674
+Val time: 2 min 50 s
+
+Epoch 9/10
+----------
+Train loss: 0.449
+Train time: 2 min 8 s
+
+Val error (mean): 61.569°
+Val error (median): 25.890°
+Val loss: 5.726
+Val time: 2 min 50 s
+
+Epoch 10/10
+-----------
+Train loss: 0.418
+Train time: 2 min 8 s
+
+Val error (mean): 59.881°
+Val error (median): 24.573°
+Val loss: 5.557
+Val time: 2 min 50 s
+
