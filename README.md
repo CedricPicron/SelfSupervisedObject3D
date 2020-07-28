@@ -1,7 +1,7 @@
 # SelfSupervisedObject3D
 Method for self-supervised monocular 3D object detection, demonstrated for 3D car detection in the autonomous driving setting.
 
-<p align="center"> <img src='source/Kitti/Tracking/Results/Video3D/4.gif' align="center"> </p> 
+<p align="center"> <img src='source/Kitti/Tracking/Results/Video3D/4.gif' align="center" width="100%"> </p> 
 
 The method consists of two steps:
 1. A network is trained in a self-supervised way to detect the yaw angle orientations of the different cars in the scene.
