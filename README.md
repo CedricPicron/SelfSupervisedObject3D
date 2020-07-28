@@ -1,6 +1,8 @@
 # SelfSupervisedObject3D
 Method for self-supervised monocular 3D object detection, demonstrated for 3D car detection in the autonomous driving setting.
 
+<p align="center"> <img src='source/Kitti/Tracking/Results/Video3D/4.gif' align="center"> </p> 
+
 The method consists of two steps:
 1. A network is trained in a self-supervised way to detect the yaw angle orientations of the different cars in the scene.
 2. An optimization method is used to maximize the 2D IoU of the estimated 2D box with the projection of the estimated 3D box.
@@ -17,15 +19,15 @@ conda install -c pytorch pytorch torchvision
 Finally, make sure that `pandas` and `scipy` are also present in the conda environment.
 
 ## Data preparation
-### Kitti
+#### Kitti
 For Kitti, we use both the *3D object detection* and the *tracking* datasets. 
 * For the **3D object detection** dataset, complete the `calib`, `image_2` and `label_2` directories under `datasets/Kitti/Object3D/training`. 
 * For the **tracking** dataset, complete the `calib`, `image_02` and `label_02` directories under `datasets/Kitti/Tracking/training`.
 
-### nuScenes
+#### nuScenes
 For nuScenes, we support both `v1.0-mini` and `v1.0-trainval` versions natively. For each version, complete both the `datasets/NuScenes/<version>/samples` and `datasets/NuScenes/<version>/<version>` directories.
 
-### Virtual Kitti
+#### Virtual Kitti
 For Virtual Kitti, simply complete the `datasets/VirtualKitti` directory, as obtained by downloading the dataset.
 
 ## Usage
