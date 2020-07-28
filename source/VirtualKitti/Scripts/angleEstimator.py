@@ -3,12 +3,10 @@ import math
 import numpy as np
 import os
 import random
-import subprocess
 import time
 import torch
 
 from pandas import read_csv
-
 from PIL import Image
 from PIL.ImageOps import mirror
 
@@ -41,19 +39,19 @@ argparser.add_argument(
     '--dataRoot',
     metavar='PATH',
     type=str,
-    default='/esat/ruchba/cpicron/Datasets/VirtualKitti',
+    default='../../../datasets/VirtualKitti',
     help='Path to dataset root.')
 argparser.add_argument(
     '--experimentNumber',
     metavar='N',
     type=int,
-    default=0,
+    default=1,
     help='Number corresponding to experiment.')
 argparser.add_argument(
     '--experimentRoot',
     metavar='PATH',
     type=str,
-    default='/esat/ruchba/cpicron/ObjectDetector3D/VirtualKitti',
+    default='..',
     help='Path to experiment base directory.')
 argparser.add_argument(
     '--huberQuadSize',
@@ -124,7 +122,7 @@ argparser.add_argument(
     metavar='MODE',
     type=str,
     choices=['all', 'clone', 'fog', 'morning', 'overcast', 'rain', 'sunset'],
-    default='clone',
+    default='all',
     help='Render mode of images.')
 argparser.add_argument(
     '--representation',
@@ -538,7 +536,7 @@ def printTraining():
 
 def removeCheckpoint():
     checkpointPath = '%s/Checkpoints/AngleEstimator/%s/%d.pt' % (args.experimentRoot, args.rendering.capitalize(), args.experimentNumber)
-    subprocess.run(['rm', '-f', checkpointPath])
+    os.remove(checkpointPath)
 
 def saveCheckpoint(model, optimizer, scheduler, epoch):
     savePath = '%s/Checkpoints/AngleEstimator/%s/%d.pt' % (args.experimentRoot, args.rendering.capitalize(), args.experimentNumber)

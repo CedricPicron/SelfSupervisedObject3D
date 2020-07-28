@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(1, '/esat/ruchba/cpicron/Datasets/Kitti/Object3D/utils/Scripts')
+sys.path.insert(1, '../../../../datasets/Kitti/Object3D/utils/Scripts')
 
 from utils import computeBox3D
 from utils import getDefaultLabel
@@ -31,7 +31,7 @@ argparser.add_argument(
     '--angleModelPath',
     metavar='PATH',
     type=str,
-    default='/esat/ruchba/cpicron/ObjectDetector3D/Kitti/Tracking/Models/SelfSupervisedAngle/All/21.pt',
+    default='../Models/SelfSupervisedAngle/All/1.pt',
     help='Path to self-supervised orientation model.')
 argparser.add_argument(
     '--boxHeight',
@@ -55,7 +55,7 @@ argparser.add_argument(
     '--dataRoot',
     metavar='PATH',
     type=str,
-    default='/esat/ruchba/cpicron/Datasets/Kitti/Object3D/training',
+    default='../../../../datasets/Kitti/Object3D/training',
     help='Path to dataset location.')
 argparser.add_argument(
     '--epsilon',
@@ -67,13 +67,13 @@ argparser.add_argument(
     '--experimentNumber',
     metavar='N',
     type=int,
-    default=0,
+    default=1,
     help='Number corresponding to experiment.')
 argparser.add_argument(
     '--experimentRoot',
     metavar='PATH',
     type=str,
-    default='/esat/ruchba/cpicron/ObjectDetector3D/Kitti/Object3D',
+    default='..',
     help='Path to experiment base directory.')
 args = argparser.parse_args()
 

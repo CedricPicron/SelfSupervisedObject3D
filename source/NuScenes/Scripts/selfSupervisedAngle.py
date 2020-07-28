@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(1, '/esat/ruchba/cpicron/Datasets/Kitti/Tracking/utils/Scripts')
+sys.path.insert(1, '../../../datasets/Kitti/Tracking/utils/Scripts')
 
 from utils import readLabelFiles
 
@@ -43,19 +43,19 @@ argparser.add_argument(
     '--dataRoot',
     metavar='PATH',
     type=str,
-    default='/esat/ruchba/cpicron/Datasets/NuScenes',
+    default='../../../datasets/NuScenes',
     help='Path to dataset root.')
 argparser.add_argument(
     '--experimentNumber',
     metavar='N',
     type=int,
-    default=0,
+    default=1,
     help='Number corresponding to experiment.')
 argparser.add_argument(
     '--experimentRoot',
     metavar='PATH',
     type=str,
-    default='/esat/ruchba/cpicron/ObjectDetector3D/NuScenes',
+    default='..',
     help='Path to experiment base directory.')
 argparser.add_argument(
     '--huberQuadSize',
@@ -99,7 +99,7 @@ argparser.add_argument(
     metavar='MODE',
     type=str,
     choices=['', 'all', 'clone', 'fog', 'morning', 'overcast', 'rain', 'sunset'],
-    default='',
+    default='all',
     help='If non-empty, load Virtual Kitti model trained on specified render mode.')
 argparser.add_argument(
     '--minBbSize',
@@ -199,7 +199,7 @@ argparser.add_argument(
     '--virtualModelsRoot',
     metavar='PATH',
     type=str,
-    default='/esat/ruchba/cpicron/ObjectDetector3D/VirtualKitti/Models',
+    default='../../VirtualKitti/Models',
     help='Path used to retrieve models trained on Virtual Kitti.')
 argparser.add_argument(
     '--weightDecay',

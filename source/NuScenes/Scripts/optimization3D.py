@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(1, '/esat/ruchba/cpicron/Datasets/Kitti/Tracking/utils/Scripts')
+sys.path.insert(1, '../../../datasets/Kitti/Tracking/utils/Scripts')
 
 from utils import computeBox3D
 from utils import getDefaultLabel
@@ -8,7 +8,7 @@ from utils import normalizeAngle
 from utils import readCalibrationFile
 del sys.modules['utils']
 
-sys.path.insert(1, '/esat/ruchba/cpicron/Datasets/Kitti/Object3D/utils/Scripts')
+sys.path.insert(1, '../../../datasets/Kitti/Object3D/utils/Scripts')
 from utils import readLabelFile
 from utils import runOfflineEvaluation
 
@@ -33,7 +33,7 @@ argparser.add_argument(
     '--angleModelPath',
     metavar='PATH',
     type=str,
-    default='/esat/ruchba/cpicron/ObjectDetector3D/NuScenes/Models/SelfSupervisedAngle/All/91.pt',
+    default='../Models/SelfSupervisedAngle/All/1.pt',
     help='Path to self-supervised orientation model.')
 argparser.add_argument(
     '--boxHeight',
@@ -57,8 +57,8 @@ argparser.add_argument(
     '--dataRoot',
     metavar='PATH',
     type=str,
-    default='/esat/ruchba/cpicron/Datasets/NuScenes/v1.0-trainval',
-    help='Path to dataset location.')
+    default='../../../datasets/NuScenes/v1.0-trainval',
+    help='Path to dataset root.')
 argparser.add_argument(
     '--epsilon',
     metavar='THRESHOLD',
@@ -69,13 +69,13 @@ argparser.add_argument(
     '--experimentNumber',
     metavar='N',
     type=int,
-    default=0,
+    default=1,
     help='Number corresponding to experiment.')
 argparser.add_argument(
     '--experimentRoot',
     metavar='PATH',
     type=str,
-    default='/esat/ruchba/cpicron/ObjectDetector3D/NuScenes',
+    default='..',
     help='Path to experiment base directory.')
 args = argparser.parse_args()
 

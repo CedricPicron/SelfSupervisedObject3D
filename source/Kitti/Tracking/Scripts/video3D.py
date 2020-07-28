@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(1, '/esat/ruchba/cpicron/Datasets/Kitti/Tracking/utils/Scripts')
+sys.path.insert(1, '../../../../datasets/Kitti/Tracking/utils/Scripts')
 
 from utils import computeBox3D
 from utils import drawBox3D
@@ -8,7 +8,6 @@ from utils import getRayAngle
 from utils import readCalibrationFile
 
 import argparse
-import cv2
 import glob
 import matplotlib.pyplot as plt
 import numpy as np
@@ -32,7 +31,7 @@ argparser.add_argument(
     '--angleModelPath',
     metavar='PATH',
     type=str,
-    default='/esat/ruchba/cpicron/ObjectDetector3D/Kitti/Tracking/Models/SelfSupervisedAngle/All/21.pt',
+    default='../Models/SelfSupervisedAngle/All/1.pt',
     help='Path to self-supervised orientation model.')
 argparser.add_argument(
     '--boxHeight',
@@ -56,13 +55,13 @@ argparser.add_argument(
     '--dataRoot',
     metavar='PATH',
     type=str,
-    default='/esat/ruchba/cpicron/Datasets/Kitti/Tracking/training',
+    default='../../../../datasets/Kitti/Tracking',
     help='Path to dataset location.')
 argparser.add_argument(
     '--experimentRoot',
     metavar='PATH',
     type=str,
-    default='/esat/ruchba/cpicron/ObjectDetector3D/Kitti/Tracking',
+    default='..',
     help='Path to experiment base directory.')
 argparser.add_argument(
     '--imageScaleFactor',

@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(1, '/esat/ruchba/cpicron/Datasets/Kitti/Tracking/utils/Scripts')
+sys.path.insert(1, '../../../../datasets/Kitti/Tracking/utils/Scripts')
 
 from utils import getSplitAll
 from utils import getSplitComplementary
@@ -47,19 +47,19 @@ argparser.add_argument(
     '--dataRoot',
     metavar='PATH',
     type=str,
-    default='/esat/ruchba/cpicron/Datasets/Kitti/Tracking',
-    help='Path to dataset root.')
+    default='../../../../datasets/Kitti/Tracking',
+    help='Path to dataset location.')
 argparser.add_argument(
     '--experimentNumber',
     metavar='N',
     type=int,
-    default=0,
+    default=1,
     help='Number corresponding to experiment.')
 argparser.add_argument(
     '--experimentRoot',
     metavar='PATH',
     type=str,
-    default='/esat/ruchba/cpicron/ObjectDetector3D/Kitti/Tracking',
+    default='..',
     help='Path to experiment base directory.')
 argparser.add_argument(
     '--huberQuadSize',
