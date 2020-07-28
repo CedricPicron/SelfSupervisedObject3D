@@ -1,0 +1,11 @@
+datasets/Kitti/Object3D/training/
+datasets/Kitti/Object3D/utils/Scripts/__pycache__/
+datasets/Kitti/Tracking/training/calib
+datasets/Kitti/Tracking/training/image_02
+datasets/Kitti/Tracking/training/label_02
+datasets/Kitti/Tracking/utils/Scripts/__pycache__/
+datasets/NuScenes/v1.0-mini/samples
+datasets/NuScenes/v1.0-mini/v1.0-mini
+datasets/NuScenes/v1.0-trainval/samples
+datasets/NuScenes/v1.0-trainval/v1.0-trainval
+datasets/VirtualKitti
