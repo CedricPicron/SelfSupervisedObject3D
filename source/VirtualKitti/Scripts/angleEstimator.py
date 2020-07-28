@@ -539,14 +539,20 @@ def removeCheckpoint():
     os.remove(checkpointPath)
 
 def saveCheckpoint(model, optimizer, scheduler, epoch):
-    savePath = '%s/Checkpoints/AngleEstimator/%s/%d.pt' % (args.experimentRoot, args.rendering.capitalize(), args.experimentNumber)
+    checkpointDir = '%s/Checkpoints/AngleEstimator/%s' % (args.experimentRoot, args.rendering.capitalize())
+    os.makedirs(checkpointDir, exist_ok=True)
+
+    savePath = '%s/%d.pt' % (checkpointDir, args.experimentNumber)
     torch.save({'model': model.state_dict(),
                 'optimizer': optimizer.state_dict(),
                 'scheduler': scheduler.state_dict(),
                 'epoch': epoch}, savePath)
 
 def saveModel(model):
-    savePath = '%s/Models/AngleEstimator/%s/%d.pt' % (args.experimentRoot, args.rendering.capitalize(), args.experimentNumber)
+    modelDir = '%s/Models/AngleEstimator/%s' % (args.experimentRoot, args.rendering.capitalize())
+    os.makedirs(modelDir, exist_ok=True)
+
+    savePath = '%s/%d.pt' % (modelDir, args.experimentNumber)
     torch.save({'model': model.state_dict()}, savePath)
 
 def train(device, trainLoader, trainSize, angleModel, optimizer):

@@ -8,7 +8,6 @@ from utils import getRayAngle
 from utils import readCalibrationFile
 
 import argparse
-import cv2
 import glob
 import matplotlib.pyplot as plt
 import numpy as np
