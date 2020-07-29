@@ -40,6 +40,9 @@ For usage, simply run the desired python scripts found under `source/<dataset>/S
 ```
 cd source/NuScenes/Scripts
 python angleEstimator.py
+python selfSupervisedAngle.py --loadModelPath <model>
+python optimization3D.py --angleModelPath <model>
+python video3D.py --angleModelPath <model>
 ```
 Beware, some scripts require trained models. Therefore, the scripts are best run in following order:
 1. First, run the `angleEstimator.py` scripts to obtain pretrained angle estimators (available Kitti tracking, nuScenes and Virtual Kitti).
