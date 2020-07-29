@@ -16,7 +16,10 @@ Then, install PyTorch 1.5+ and torchvision 0.6+:
 ```
 conda install -c pytorch pytorch torchvision
 ```
-Finally, make sure that `numpy`, `pandas` and `scipy` are also present in the conda environment.
+Finally, also install `matplotlib`, `pandas` and `scipy` if they are not yet present:
+```
+conda install -c anaconda matplotlib pandas scipy
+```
 
 ## Data preparation
 We make use of three datasets: Kitti, nuScenes and Virtual Kitti. Below we specify which directories need to be added. This can be achieved *directly* by adding the directories with the data, or *indirectly* by creating symlinks to the directories containing the real data.

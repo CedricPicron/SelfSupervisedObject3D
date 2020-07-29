@@ -7,7 +7,6 @@ import torch
 
 from matplotlib.lines import Line2D
 from PIL import Image
-from tqdm import tqdm
 
 ''' ================================================================================ '''
 ''' ------------------------- Functions to assist in Kitti ------------------------- '''
@@ -560,7 +559,7 @@ def main():
     objectLabels = sequenceLabelsDict[sequenceId]
     P = calibrationDict[sequenceId]
 
-    for frameId in tqdm(range(20)):
+    for frameId in range(20):
         imageName = '%s/%04d/%06d.png' % (imageDir, sequenceId, frameId)
         image = Image.open(imageName)
 

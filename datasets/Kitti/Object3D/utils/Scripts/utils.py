@@ -6,7 +6,6 @@ import subprocess
 
 from matplotlib.lines import Line2D
 from PIL import Image
-from tqdm import tqdm
 
 ''' ================================================================================ '''
 ''' ------------------------- Functions to assist in Kitti ------------------------- '''
@@ -495,7 +494,7 @@ def main():
     calibrationDict = readCalibrationFiles(calibDir, cameraNumber, imageIds)
     imageDir = '/esat/ruchba/cpicron/Datasets/Kitti/Object3D/training/image_2'
 
-    for imageIndex in tqdm(range(20)):
+    for imageIndex in range(20):
         objectLabels = imageLabelsDict[imageIndex]
         P = calibrationDict[imageIndex]
 
