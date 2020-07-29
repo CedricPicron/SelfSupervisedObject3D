@@ -55,7 +55,7 @@ argparser.add_argument(
     '--dataRoot',
     metavar='PATH',
     type=str,
-    default='../../../../datasets/Kitti/Tracking',
+    default='../../../../datasets/Kitti/Tracking/training',
     help='Path to dataset location.')
 argparser.add_argument(
     '--experimentRoot',
