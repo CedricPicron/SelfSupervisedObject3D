@@ -4,7 +4,7 @@ Method for self-supervised monocular 3D object detection, demonstrated for 3D ca
 <p align="center"> <img src='source/Kitti/Tracking/Results/Video3D/4.gif' align="center" width="100%"> </p> 
 
 The method consists of two steps:
-1. A network is trained in a self-supervised way to detect the yaw angle orientations of the different cars in the scene.
+1. A network is trained in a self-supervised way to detect the yaw angle orientations of the different cars in the scene. For more information about this step, take a look at our [paper](https://arxiv.org/abs/2007.14812).
 2. An optimization method is used to maximize the 2D IoU of the estimated 2D box with the projection of the estimated 3D box.
 
 ## Installation
@@ -50,4 +50,4 @@ Beware, some scripts require trained models. Therefore, the scripts are best run
 3. Thirdly, perform the 3D optimization method with the angle model from previous step in `optimization3D.py` and evaluate using Kitti metric (available for Kitti 3D object detection and nuScenes).
 4. Finally, obtain some videos of 3D car detections with `video3D.py` (available for Kitti tracking and nuScenes).
 
-In steps 2-4, make sure the correct models are loaded in (see command-line arguments of corresponding script for more information). Finally, note that some of our obtained results are found under `source/<dataset>/Results/<experiment>`.
+In steps 2-4, make sure the correct models are loaded in (see command-line arguments of corresponding script for more information). Finally, note that some of our obtained results are found under `source/<dataset>/Results/<experiment>`. Most notably, different videos showing our self-supervised method in action are found under `source/<dataset>/Results/Video3D`.
